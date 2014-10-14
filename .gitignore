@@ -1,5 +1,5 @@
 # Xcode
-#
+.DS_Store
 build/
 *.pbxuser
 !default.pbxuser
@@ -9,18 +9,50 @@ build/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
+*.xcworkspace
+!default.xcworkspace
 xcuserdata
-*.xccheckout
+profile
 *.moved-aside
 DerivedData
-*.hmap
-*.ipa
-*.xcuserstate
+.idea/
 
-# CocoaPods
-#
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
-#
-# Pods/
+# SVN
+.svn/
+
+# Project specific
+deployment
+build_res
+include_crea_link_esterno.bat
+lib_crea_link_esterno.bat
+Internal StockList Demo for iOS.xcodeproj
+Lightstreamer client for iOS/compile_includes
+Lightstreamer client for iOS/compile_libs
+Lightstreamer client for iOS/include/LightstreamerClient.h
+Lightstreamer client for iOS/include/LSClient.h
+Lightstreamer client for iOS/include/LSConnectionConstraints.h
+Lightstreamer client for iOS/include/LSConnectionDelegate.h
+Lightstreamer client for iOS/include/LSConnectionInfo.h
+Lightstreamer client for iOS/include/LSConnectionStatus.h
+Lightstreamer client for iOS/include/LSException.h
+Lightstreamer client for iOS/include/LSExtendedTableInfo.h
+Lightstreamer client for iOS/include/LSLog.h
+Lightstreamer client for iOS/include/LSMessageDelegate.h
+Lightstreamer client for iOS/include/LSMessageInfo.h
+Lightstreamer client for iOS/include/LSMode.h
+Lightstreamer client for iOS/include/LSPushConnectionException.h
+Lightstreamer client for iOS/include/LSPushServerException.h
+Lightstreamer client for iOS/include/LSPushUpdateException.h
+Lightstreamer client for iOS/include/LSSubscribedTableKey.h
+Lightstreamer client for iOS/include/LSSubscriptionConstraints.h
+Lightstreamer client for iOS/include/LSTableDelegate.h
+Lightstreamer client for iOS/include/LSTableInfo.h
+Lightstreamer client for iOS/include/LSUpdateInfo.h
+libLightstreamer_iOS_client.a
+libLightstreamer_iOS_client_64.a
+Lightstreamer client for iOS/include/LSMPNTokenChangeInfo.h
+Lightstreamer client for iOS/include/LSMPNTokenStatus.h
+Lightstreamer client for iOS/include/LSMPNInfo.h
+Lightstreamer client for iOS/include/LSMPNKey.h
+Lightstreamer client for iOS/include/LSMPNStatus.h
+Lightstreamer client for iOS/include/LSPushClientException.h

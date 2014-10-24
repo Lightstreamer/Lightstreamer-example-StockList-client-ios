@@ -470,6 +470,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -484,6 +485,7 @@
 					"/Users/gbertani/Projects/Weswit/StockList\\ Demo\\ for\\ iOS/Lightstreamer\\ client\\ for\\ iOS/lib",
 				);
 				OTHER_LDFLAGS = "";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 			};
 			name = Debug;
@@ -493,7 +495,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Weswit Srl (7PGFJN8WH5)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = StockList_Demo_for_iOS_Prefix.pch;
@@ -505,6 +508,7 @@
 					"/Users/gbertani/Projects/Weswit/StockList\\ Demo\\ for\\ iOS/Lightstreamer\\ client\\ for\\ iOS/lib",
 				);
 				OTHER_LDFLAGS = "";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "d163ffe3-2558-467d-bcd3-6c9b861733ea";
 				VALIDATE_PRODUCT = YES;
 			};

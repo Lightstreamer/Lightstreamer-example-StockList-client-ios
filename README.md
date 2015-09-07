@@ -27,12 +27,23 @@ A full Xcode project specification, ready for compilation of the app sources, is
 
 ### Getting Started
 
-Before you can build this demo, you should complete this project with the Lighstreamer iOS Client library. Follow these steps:
+Before you can build this demo, you need to install CocoaPods to handle the project dependency on the Lightstreamer iOS client library. Follow these steps:
 
-* Drop into the `Lightstreamer client for iOS/lib` folder of this project the *Lightstreamer_iOS_client.a* file from the `/DOCS-SDKs/sdk_client_ios/lib` of [Lightstreamer distribution version 6.0 or greater](http://www.lightstreamer.com/download).
-* Drop into the `Lightstreamer client for iOS/include` folder of this project all the include files from the `/DOCS-SDKs/sdk_client_ios/include` of [latest Lightstreamer distribution](http://www.lightstreamer.com/download).
+* open a terminal and run the following command:
 
-Done this, the project should compile with no errors.
+```sh
+$ sudo gem install cocoapods
+```
+
+* `cd` into the directory where you downloaded this project and run the following command:
+
+```sh
+$ pod install
+```
+
+* CocoaPods should now resolve the dependency on the Lightstreamer iOS client library and prepare a workspace for you.
+
+Done this, open the workspace with Xcode and it should compile with no errors. In case of errors during dependency resolution, you can find more information on [CocoaPods official website](https://cocoapods.org).
 
 ### Compile and Run
 

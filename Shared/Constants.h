@@ -26,9 +26,9 @@
 #define NUMBER_OF_LIST_FIELDS      (4)
 #define NUMBER_OF_DETAIL_FIELDS    (11)
 
-#define TABLE_ITEMS                ([NSArray arrayWithObjects:@"item1", @"item2", @"item3", @"item4", @"item5", @"item6", @"item7", @"item8", @"item9", @"item10", @"item11", @"item12", @"item13", @"item14", @"item15", @"item16", @"item17", @"item18", @"item19", @"item20", @"item21", @"item22", @"item23", @"item24", @"item25", @"item26", @"item27", @"item28", @"item29", @"item30", nil])
-#define LIST_FIELDS                ([NSArray arrayWithObjects:@"last_price", @"time", @"pct_change", @"stock_name", nil])
-#define DETAIL_FIELDS              ([NSArray arrayWithObjects:@"last_price", @"time", @"pct_change", @"bid_quantity", @"bid", @"ask", @"ask_quantity", @"min", @"max", @"open_price", @"stock_name", nil])
+#define TABLE_ITEMS                (@[@"item1", @"item2", @"item3", @"item4", @"item5", @"item6", @"item7", @"item8", @"item9", @"item10", @"item11", @"item12", @"item13", @"item14", @"item15", @"item16", @"item17", @"item18", @"item19", @"item20", @"item21", @"item22", @"item23", @"item24", @"item25", @"item26", @"item27", @"item28", @"item29", @"item30"])
+#define LIST_FIELDS                (@[@"last_price", @"time", @"pct_change", @"stock_name"])
+#define DETAIL_FIELDS              (@[@"last_price", @"time", @"pct_change", @"bid_quantity", @"bid", @"ask", @"ask_quantity", @"min", @"max", @"open_price", @"stock_name"])
 
 #define DEVICE_IPAD                ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad)
 #define DEVICE_XIB(xib)            (DEVICE_IPAD ? [xib stringByAppendingString:@"_iPad"] : [xib stringByAppendingString:@"_iPhone"])

@@ -40,7 +40,7 @@
 #pragma mark -
 #pragma mark Updates from Lightstreamer
 
-- (void) itemDidUpdateWithInfo:(LSUpdateInfo *)updateInfo;
+- (void) itemDidUpdateWithInfo:(LSItemUpdate *)itemUpdate;
 
 
 

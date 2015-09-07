@@ -10,6 +10,7 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2247461C680883B30BF6FDD0 /* libPods-StockList Demo for iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6A5A93D6209BD6CA3DAC51 /* libPods-StockList Demo for iOS.a */; };
 		2860E328111B887F00E27156 /* AppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E326111B887F00E27156 /* AppDelegate_iPhone.m */; };
 		2860E329111B887F00E27156 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E327111B887F00E27156 /* MainWindow_iPhone.xib */; };
 		2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E32C111B888700E27156 /* AppDelegate_iPad.m */; };
@@ -38,6 +39,9 @@
 		8C66014C186D90D7008DB46F /* ChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C66014B186D90D7008DB46F /* ChartView.m */; };
 		8C66014F186D90F0008DB46F /* ChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C66014E186D90F0008DB46F /* ChartViewController.m */; };
 		8C660151186DB6D1008DB46F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C660150186DB6D1008DB46F /* CoreText.framework */; };
+		8C6632211B6FC72200D9A191 /* libjre_emul.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6632201B6FC72200D9A191 /* libjre_emul.a */; };
+		8C6632231B6FC73000D9A191 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6632221B6FC73000D9A191 /* libicucore.dylib */; };
+		8C6632251B6FC73500D9A191 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6632241B6FC73500D9A191 /* libz.dylib */; };
 		8C7518E41875BBA700CB61D5 /* UIAlertView+BlockExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7518E31875BBA700CB61D5 /* UIAlertView+BlockExtensions.m */; };
 		8C7A1A3012E4AF770019C2A7 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7A1A2F12E4AF770019C2A7 /* InfoViewController.m */; };
 		8C7A1A3612E4AF8D0019C2A7 /* InfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7A1A3512E4AF8D0019C2A7 /* InfoView.m */; };
@@ -55,7 +59,6 @@
 		8CA3C26117C3A78C005598B5 /* StatusView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C26017C3A78C005598B5 /* StatusView_iPhone.xib */; };
 		8CA3C26517C3A92B005598B5 /* InfoView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C26417C3A92B005598B5 /* InfoView_iPad.xib */; };
 		8CA3C26717C3A937005598B5 /* StatusView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C26617C3A937005598B5 /* StatusView_iPad.xib */; };
-		8CC6A4811524C7F7003FB6C0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC6A4801524C7F7003FB6C0 /* SystemConfiguration.framework */; };
 		8CD113AD12A01DFC0047C173 /* StockListView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD113AC12A01DFC0047C173 /* StockListView_iPad.xib */; };
 		8CD113B012A01E600047C173 /* StockListView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD113AF12A01E600047C173 /* StockListView_iPhone.xib */; };
 		8CD113B412A01EEE0047C173 /* StockListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD113B312A01EEE0047C173 /* StockListViewController.m */; };
@@ -75,6 +78,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03DEDB1AE2F1BC4DCD2B6337 /* Pods-StockList Demo for iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockList Demo for iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StockList Demo for iOS/Pods-StockList Demo for iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* Lightstreamer StockList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lightstreamer StockList.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -87,6 +91,7 @@
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* StockList_Demo_for_iOS_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockList_Demo_for_iOS_Prefix.pch; sourceTree = "<group>"; };
+		5A3F7A84BBBB949BE437FF66 /* Pods-StockList Demo for iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockList Demo for iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StockList Demo for iOS/Pods-StockList Demo for iOS.release.xcconfig"; sourceTree = "<group>"; };
 		8C00FE621884390B009A4F34 /* Connector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Connector.h; path = Shared/Connector.h; sourceTree = "<group>"; };
 		8C00FE631884390B009A4F34 /* Connector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Connector.m; path = Shared/Connector.m; sourceTree = "<group>"; };
 		8C2F040D1869D90500012B38 /* SpecialEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpecialEffects.h; path = Shared/SpecialEffects.h; sourceTree = "<group>"; };
@@ -110,6 +115,9 @@
 		8C66014D186D90F0008DB46F /* ChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChartViewController.h; path = Shared/ChartViewController.h; sourceTree = "<group>"; };
 		8C66014E186D90F0008DB46F /* ChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChartViewController.m; path = Shared/ChartViewController.m; sourceTree = "<group>"; };
 		8C660150186DB6D1008DB46F /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		8C6632201B6FC72200D9A191 /* libjre_emul.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjre_emul.a; path = "Lightstreamer client for iOS/lib/libjre_emul.a"; sourceTree = "<group>"; };
+		8C6632221B6FC73000D9A191 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		8C6632241B6FC73500D9A191 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		8C7518E018757A2700CB61D5 /* StockListAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StockListAppDelegate.h; path = Shared/StockListAppDelegate.h; sourceTree = "<group>"; };
 		8C7518E21875BBA700CB61D5 /* UIAlertView+BlockExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+BlockExtensions.h"; path = "Shared/UIAlertView+BlockExtensions.h"; sourceTree = "<group>"; };
 		8C7518E31875BBA700CB61D5 /* UIAlertView+BlockExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+BlockExtensions.m"; path = "Shared/UIAlertView+BlockExtensions.m"; sourceTree = "<group>"; };
@@ -131,7 +139,6 @@
 		8CA3C26017C3A78C005598B5 /* StatusView_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatusView_iPhone.xib; sourceTree = "<group>"; };
 		8CA3C26417C3A92B005598B5 /* InfoView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoView_iPad.xib; sourceTree = "<group>"; };
 		8CA3C26617C3A937005598B5 /* StatusView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatusView_iPad.xib; sourceTree = "<group>"; };
-		8CB3C34212EF35CE00A06AE0 /* libLightstreamer_iOS_client.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLightstreamer_iOS_client.a; path = "Lightstreamer client for iOS/lib/libLightstreamer_iOS_client.a"; sourceTree = "<group>"; };
 		8CC6A4801524C7F7003FB6C0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8CD113AC12A01DFC0047C173 /* StockListView_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockListView_iPad.xib; sourceTree = "<group>"; };
 		8CD113AF12A01E600047C173 /* StockListView_iPhone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockListView_iPhone.xib; sourceTree = "<group>"; };
@@ -162,6 +169,7 @@
 		8CFDB3D0189284CD009D8BD1 /* Icon_connecting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_connecting.png; sourceTree = "<group>"; };
 		8CFDB3D1189284CD009D8BD1 /* Icon_connecting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_connecting@2x.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* StockList_Demo_for_iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "StockList_Demo_for_iOS-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		EF6A5A93D6209BD6CA3DAC51 /* libPods-StockList Demo for iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StockList Demo for iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,13 +177,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C6632251B6FC73500D9A191 /* libz.dylib in Frameworks */,
+				8C6632231B6FC73000D9A191 /* libicucore.dylib in Frameworks */,
+				8C6632211B6FC72200D9A191 /* libjre_emul.a in Frameworks */,
 				8C17AE6A18C78DFA00363347 /* libLightstreamer_iOS_client_64.a in Frameworks */,
 				8C660151186DB6D1008DB46F /* CoreText.framework in Frameworks */,
 				8C8616301610BDBE00D6F55F /* Security.framework in Frameworks */,
-				8CC6A4811524C7F7003FB6C0 /* SystemConfiguration.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				2247461C680883B30BF6FDD0 /* libPods-StockList Demo for iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +281,7 @@
 				29B97315FDCFA39411CA2CEA /* Other Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				57F1CBAA97C793FFEAAEC641 /* Pods */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -296,16 +308,28 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8C660150186DB6D1008DB46F /* CoreText.framework */,
+				8C6632241B6FC73500D9A191 /* libz.dylib */,
+				8C6632221B6FC73000D9A191 /* libicucore.dylib */,
+				8C6632201B6FC72200D9A191 /* libjre_emul.a */,
 				8CD8D57E186879690021E803 /* libLightstreamer_iOS_client_64.a */,
+				8C660150186DB6D1008DB46F /* CoreText.framework */,
 				8C86162F1610BDBE00D6F55F /* Security.framework */,
 				8CC6A4801524C7F7003FB6C0 /* SystemConfiguration.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
-				8CB3C34212EF35CE00A06AE0 /* libLightstreamer_iOS_client.a */,
+				EF6A5A93D6209BD6CA3DAC51 /* libPods-StockList Demo for iOS.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57F1CBAA97C793FFEAAEC641 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03DEDB1AE2F1BC4DCD2B6337 /* Pods-StockList Demo for iOS.debug.xcconfig */,
+				5A3F7A84BBBB949BE437FF66 /* Pods-StockList Demo for iOS.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		8C1DC8A912AD3B960028E44A /* Graphics */ = {
@@ -340,9 +364,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "StockList Demo for iOS" */;
 			buildPhases = (
+				860BA4A4A78AB08337386F7E /* Check Pods Manifest.lock */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				A9E30C0A24D0384DD44C9248 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -437,6 +463,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		860BA4A4A78AB08337386F7E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A9E30C0A24D0384DD44C9248 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StockList Demo for iOS/Pods-StockList Demo for iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -467,6 +526,7 @@
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03DEDB1AE2F1BC4DCD2B6337 /* Pods-StockList Demo for iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -480,11 +540,6 @@
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "StockList_Demo_for_iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/gbertani/Projects/Weswit/StockList\\ Demo\\ for\\ iOS/Lightstreamer\\ client\\ for\\ iOS/lib",
-				);
-				OTHER_LDFLAGS = "";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 			};
@@ -492,6 +547,7 @@
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A3F7A84BBBB949BE437FF66 /* Pods-StockList Demo for iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -503,11 +559,6 @@
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "StockList_Demo_for_iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/gbertani/Projects/Weswit/StockList\\ Demo\\ for\\ iOS/Lightstreamer\\ client\\ for\\ iOS/lib",
-				);
-				OTHER_LDFLAGS = "";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "d163ffe3-2558-467d-bcd3-6c9b861733ea";
 				VALIDATE_PRODUCT = YES;
@@ -520,9 +571,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "\"./Lightstreamer client for iOS/include\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = "\"./Lightstreamer client for iOS/lib\"";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "Lightstreamer StockList";
 				SDKROOT = iphoneos;
@@ -536,9 +585,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "\"./Lightstreamer client for iOS/include\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = "\"./Lightstreamer client for iOS/lib\"";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "Lightstreamer StockList";
 				SDKROOT = iphoneos;

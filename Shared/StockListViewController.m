@@ -72,9 +72,6 @@
 	if (self = [super init]) {
 		self.title= @"Lightstreamer Stock List";
 		
-        // Queue for background execution
-		_backgroundQueue= dispatch_queue_create("backgroundQueue", 0);
-
 		// Multiple-item data structures: each item has a second-level dictionary.
 		// They store fields data and which fields have been updated
 		_itemData= [[NSMutableDictionary alloc] initWithCapacity:NUMBER_OF_ITEMS];
@@ -187,10 +184,8 @@
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(connectionStatusChanged) name:NOTIFICATION_CONN_STATUS object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(connectionEnded) name:NOTIFICATION_CONN_ENDED object:nil];
 	
-    // Start connection in background
-	dispatch_async(_backgroundQueue, ^() {
-		[[Connector sharedConnector] connect];
-	});
+    // Start connection (executes in background)
+	[[Connector sharedConnector] connect];
 }
 
 - (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -414,31 +409,27 @@
 	// This method is always called from a background thread
 
 	// Check if we need to subscribe
-	BOOL needsSubscription= ((!_subscribed) && [[[Connector sharedConnector] client] isConnected]);
+	BOOL needsSubscription= ((!_subscribed) && [[Connector sharedConnector] isConnected]);
 
 	dispatch_async(dispatch_get_main_queue(), ^{
 		
 		// Update connection status icon
-		switch ([[[Connector sharedConnector] client] connectionStatus]) {
-			case LSConnectionStatusDisconnected:
-				self.navigationItem.leftBarButtonItem.image= [UIImage imageNamed:@"Icon_disconnected.png"];
-				break;
-				
-			case LSConnectionStatusConnecting:
-				self.navigationItem.leftBarButtonItem.image= [UIImage imageNamed:@"Icon_connecting.png"];
-				break;
-
-			case LSConnectionStatusStalled:
-				self.navigationItem.leftBarButtonItem.image= [UIImage imageNamed:@"Icon_stalled.png"];
-				break;
-				
-			case LSConnectionStatusConnectedInPollingMode:
-				self.navigationItem.leftBarButtonItem.image= [UIImage imageNamed:@"Icon_polling.png"];
-				break;
-				
-			case LSConnectionStatusConnectedInStreamingMode:
-				self.navigationItem.leftBarButtonItem.image= [UIImage imageNamed:@"Icon_streaming.png"];
-				break;
+		if ([[[Connector sharedConnector] connectionStatus] hasPrefix:@"DISCONNECTED"]) {
+			self.navigationItem.leftBarButtonItem.image= [UIImage imageNamed:@"Icon_disconnected.png"];
+			
+		} else if ([[[Connector sharedConnector] connectionStatus] hasPrefix:@"CONNECTING"]) {
+			self.navigationItem.leftBarButtonItem.image= [UIImage imageNamed:@"Icon_connecting.png"];
+			
+		} else if ([[[Connector sharedConnector] connectionStatus] hasPrefix:@"STALLED"]) {
+			self.navigationItem.leftBarButtonItem.image= [UIImage imageNamed:@"Icon_stalled.png"];
+			
+		} else if ([[[Connector sharedConnector] connectionStatus] hasPrefix:@"CONNECTED"] &&
+				   [[[Connector sharedConnector] connectionStatus] hasSuffix:@"POLLING"]) {
+			self.navigationItem.leftBarButtonItem.image= [UIImage imageNamed:@"Icon_polling.png"];
+			
+		} else if ([[[Connector sharedConnector] connectionStatus] hasPrefix:@"CONNECTED"] &&
+				   [[[Connector sharedConnector] connectionStatus] hasSuffix:@"STREAMING"]) {
+			self.navigationItem.leftBarButtonItem.image= [UIImage imageNamed:@"Icon_streaming.png"];
 		}
 		
 		// If the detail controller is visible, set the item on the detail view controller,
@@ -451,29 +442,16 @@
 	if (needsSubscription) {
 		_subscribed= YES;
 
-		// Subscribe the table on a background thread
-		dispatch_async(_backgroundQueue, ^() {
-			NSLog(@"StockListViewController: subscribing table...");
+		// Subscribe the table (executes in background)
+		NSLog(@"StockListViewController: subscribing table...");
 			
-			@try {
-				
-				// The LSClient will reconnect and resubscribe automatically
-				LSExtendedTableInfo *tableInfo= [LSExtendedTableInfo extendedTableInfoWithItems:TABLE_ITEMS
-																						   mode:LSModeMerge
-																						 fields:LIST_FIELDS
-																					dataAdapter:DATA_ADAPTER
-																					   snapshot:YES];
-				
-				_tableKey= [[[Connector sharedConnector] client] subscribeTableWithExtendedInfo:tableInfo
-																					   delegate:self
-																				useCommandLogic:NO];
-				
-				NSLog(@"StockListViewController: table subscribed");
-				
-			} @catch (NSException *e) {
-				NSLog(@"StockListViewController: table subscription failed with to exception: %@", e);
-			}
-		});
+		// The LSLightstreamerClient will reconnect and resubscribe automatically
+		_subscription= [[LSSubscription alloc] initWithSubscriptionMode:@"MERGE" items:TABLE_ITEMS fields:LIST_FIELDS];
+		_subscription.dataAdapter= DATA_ADAPTER;
+		_subscription.requestedSnapshot= @"yes";
+		[_subscription addDelegate:self];
+		
+		[[Connector sharedConnector] subscribe:_subscription];
 	}
 }
 
@@ -483,12 +461,10 @@
 	// Connection was forcibly closed by the server,
 	// prepare for a new subscription
 	_subscribed= NO;
-	_tableKey= nil;
+	_subscription= nil;
 	
-    // Start a new connection in background
-	dispatch_async(_backgroundQueue, ^() {
-		[[Connector sharedConnector] connect];
-	});
+    // Start a new connection (executes in background)
+	[[Connector sharedConnector] connect];
 }
 
 
@@ -514,44 +490,51 @@
 
 
 #pragma mark -
-#pragma mark Methods of LSTableDelegate
+#pragma mark Methods of LSSubscriptionDelegate
 
-- (void) table:(LSSubscribedTableKey *)tableKey itemPosition:(int)itemPosition itemName:(NSString *)itemName didUpdateWithInfo:(LSUpdateInfo *)updateInfo {
+- (void) subscription:(nonnull LSSubscription *)subscription didUpdateItem:(nonnull LSItemUpdate *)itemUpdate {
 	// This method is always called from a background thread
+
+	NSUInteger itemPosition= itemUpdate.itemPos;
 	
 	// Check and prepare the item's data structures
 	NSMutableDictionary *item= nil;
 	NSMutableDictionary *itemUpdated= nil;
 	@synchronized (_itemData) {
-		item= [_itemData objectForKey:[NSNumber numberWithInt:(itemPosition -1)]];
+		item= [_itemData objectForKey:[NSNumber numberWithUnsignedInteger:(itemPosition -1)]];
 		if (!item) {
 			item= [[NSMutableDictionary alloc] initWithCapacity:NUMBER_OF_LIST_FIELDS];
-			[_itemData setObject:item forKey:[NSNumber numberWithInt:(itemPosition -1)]];
+			[_itemData setObject:item forKey:[NSNumber numberWithUnsignedInteger:(itemPosition -1)]];
 		}
 
-		itemUpdated= [_itemUpdated objectForKey:[NSNumber numberWithInt:(itemPosition -1)]];
+		itemUpdated= [_itemUpdated objectForKey:[NSNumber numberWithUnsignedInteger:(itemPosition -1)]];
 		if (!itemUpdated) {
 			itemUpdated= [[NSMutableDictionary alloc] initWithCapacity:NUMBER_OF_LIST_FIELDS];
-			[_itemUpdated setObject:itemUpdated forKey:[NSNumber numberWithInt:(itemPosition -1)]];
+			[_itemUpdated setObject:itemUpdated forKey:[NSNumber numberWithUnsignedInteger:(itemPosition -1)]];
 		}
 	}
 		
-	// Store the updated fields in the item's data structures
+	double previousLastPrice= 0.0;
 	for (NSString *fieldName in LIST_FIELDS) {
-		NSString *value= [updateInfo currentValueOfFieldName:fieldName];
+		
+		// Save previous last price to choose blick color later
+		if ([fieldName isEqualToString:@"last_price"])
+			previousLastPrice= [[item objectForKey:fieldName] doubleValue];
+
+		// Store the updated field in the item's data structures
+		NSString *value= [itemUpdate valueWithFieldName:fieldName];
 		
 		if (value)
 			[item setObject:value forKey:fieldName];
 		else
 			[item setObject:[NSNull null] forKey:fieldName];
 		
-		if ([updateInfo isChangedValueOfFieldName:fieldName])
+		if ([itemUpdate isValueChangedWithFieldName:fieldName])
 			[itemUpdated setObject:[NSNumber numberWithBool:YES] forKey:fieldName];
 	}
 	
 	// Evaluate the update color and store it in the item's data structures
-	double currentLastPrice= [[updateInfo currentValueOfFieldName:@"last_price"] doubleValue];
-	double previousLastPrice= [[updateInfo previousValueOfFieldName:@"last_price"] doubleValue];
+	double currentLastPrice= [[itemUpdate valueWithFieldName:@"last_price"] doubleValue];
 	if (currentLastPrice >= previousLastPrice)
 		[item setObject:@"green" forKey:@"color"];
 	else

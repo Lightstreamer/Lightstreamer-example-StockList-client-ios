@@ -20,8 +20,8 @@
 #import <Foundation/Foundation.h>
 
 
-@interface Connector : NSObject <LSConnectionDelegate> {
-	LSClient *_client;
+@interface Connector : NSObject <LSClientDelegate> {
+	LSLightstreamerClient *_client;
 }
 
 
@@ -36,11 +36,15 @@
 
 - (void) connect;
 
+- (void) subscribe:(LSSubscription *)subscription;
+- (void) unsubscribe:(LSSubscription *)subscription;
+
 
 #pragma mark -
 #pragma mark Properties
 
-@property (nonatomic, readonly) LSClient *client;
+@property (nonatomic, readonly, getter=isConnected) BOOL connected;
+@property (nonatomic, readonly) NSString *connectionStatus;
 
 
 @end

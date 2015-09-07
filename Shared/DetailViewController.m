@@ -55,9 +55,6 @@
 - (id) init {
 	if (self = [super init]) {
 		
-        // Queue for background execution
-		_backgroundQueue= dispatch_queue_create("backgroundQueue", 0);
-		
 		// Single-item data structures: they store fields data and
 		// which fields have been updated
 		_itemData= [[NSMutableDictionary alloc] init];
@@ -94,21 +91,12 @@
 - (void) viewDidDisappear:(BOOL)animated {
 	
 	// Unsubscribe the table
-	if (_tableKey) {
-		dispatch_async(_backgroundQueue, ^{
-			NSLog(@"DetailViewController: unsubscribing previous table...");
-			
-			@try {
-				[[[Connector sharedConnector] client] unsubscribeTable:_tableKey];
-				
-				NSLog(@"DetailViewController: previous table unsubscribed");
-				
-			} @catch (NSException *e) {
-				NSLog(@"DetailViewController: previous table unsubscription failed with exception: %@", e);
-			}
-			
-			_tableKey= nil;
-		});
+	if (_subscription) {
+		NSLog(@"DetailViewController: unsubscribing previous table...");
+		
+		[[Connector sharedConnector] unsubscribe:_subscription];
+	
+		_subscription= nil;
 	}
 }
 
@@ -133,56 +121,37 @@
 	// Reset the chart
 	[_chartController clearChart];
 	
-	dispatch_async(_backgroundQueue, ^{
-
-		// If needed, unsubscribe previous table
-		if (_tableKey) {
-			NSLog(@"DetailViewController: unsubscribing previous table...");
-			
-			@try {
-				[[[Connector sharedConnector] client] unsubscribeTable:_tableKey];
-				
-				NSLog(@"DetailViewController: previous table unsubscribed");
-				
-			} @catch (NSException *e) {
-				NSLog(@"DetailViewController: previous table unsubscription failed with exception: %@", e);
-			}
-			
-			_tableKey= nil;
-		}
+	// If needed, unsubscribe previous table
+	if (_subscription) {
+		NSLog(@"DetailViewController: unsubscribing previous table...");
 		
-		// Subscribe new single-item table
-		if (item) {
-			NSLog(@"DetailViewController: subscribing table...");
-			
-			@try {
-				
-				// The LSClient will reconnect and resubscribe automatically
-				LSExtendedTableInfo *tableInfo= [LSExtendedTableInfo extendedTableInfoWithItems:[NSArray arrayWithObject:item]
-																						   mode:LSModeMerge
-																						 fields:DETAIL_FIELDS
-																					dataAdapter:DATA_ADAPTER
-																					   snapshot:YES];
-				
-				_tableKey= [[[Connector sharedConnector] client] subscribeTableWithExtendedInfo:tableInfo
-																					   delegate:self
-																				useCommandLogic:NO];
-				
-				NSLog(@"DetailViewController: table subscribed");
-				
-			} @catch (NSException *e) {
-				NSLog(@"DetailViewController: table subscription failed with exception: %@", e);
-			}
-		}
-	});
+		[[Connector sharedConnector] unsubscribe:_subscription];
+		
+		_subscription= nil;
+	}
+	
+	// Subscribe new single-item table
+	if (item) {
+		NSLog(@"DetailViewController: subscribing table...");
+		
+		// The LSLightstreamerClient will reconnect and resubscribe automatically
+		_subscription= [[LSSubscription alloc] initWithSubscriptionMode:@"MERGE" items:@[item] fields:DETAIL_FIELDS];
+		_subscription.dataAdapter= DATA_ADAPTER;
+		_subscription.requestedSnapshot= @"yes";
+		[_subscription addDelegate:self];
+		
+		[[Connector sharedConnector] subscribe:_subscription];
+	}
 }
 
 
 #pragma mark -
-#pragma mark Methods of LSTableDelegate
+#pragma mark Methods of LSSubscriptionDelegate
 
-- (void) table:(LSSubscribedTableKey *)tableKey itemPosition:(int)itemPosition itemName:(NSString *)itemName didUpdateWithInfo:(LSUpdateInfo *)updateInfo {
+- (void) subscription:(nonnull LSSubscription *)subscription didUpdateItem:(nonnull LSItemUpdate *)itemUpdate {
 	// This method is always called from a background thread
+	
+	NSString *itemName= itemUpdate.itemName;
 	
 	@synchronized (self) {
 		
@@ -190,21 +159,26 @@
 		if (![_item isEqualToString:itemName])
 			return;
 		
-		// Store the updated fields in the item's data structures
+		double previousLastPrice= 0.0;
 		for (NSString *fieldName in DETAIL_FIELDS) {
-			NSString *value= [updateInfo currentValueOfFieldName:fieldName];
+			
+			// Save previous last price to choose blick color later
+			if ([fieldName isEqualToString:@"last_price"])
+				previousLastPrice= [[_itemData objectForKey:fieldName] doubleValue];
+
+			// Store the updated field in the item's data structures
+			NSString *value= [itemUpdate valueWithFieldName:fieldName];
 			
 			if (value)
 				[_itemData setObject:value forKey:fieldName];
 			else
 				[_itemData setObject:[NSNull null] forKey:fieldName];
 			
-			if ([updateInfo isChangedValueOfFieldName:fieldName])
+			if ([itemUpdate isValueChangedWithFieldName:fieldName])
 				[_itemUpdated setObject:[NSNumber numberWithBool:YES] forKey:fieldName];
 		}
 		
-		double currentLastPrice= [[updateInfo currentValueOfFieldName:@"last_price"] doubleValue];
-		double previousLastPrice= [[updateInfo previousValueOfFieldName:@"last_price"] doubleValue];
+		double currentLastPrice= [[itemUpdate valueWithFieldName:@"last_price"] doubleValue];
 		if (currentLastPrice >= previousLastPrice)
 			[_itemData setObject:@"green" forKey:@"color"];
 		else
@@ -214,7 +188,7 @@
 	dispatch_async(dispatch_get_main_queue(), ^{
 
 		// Forward the update to the chart
-		[_chartController itemDidUpdateWithInfo:updateInfo];
+		[_chartController itemDidUpdateWithInfo:itemUpdate];
 		
 		// Update the view
 		[self updateView];

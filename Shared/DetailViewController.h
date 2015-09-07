@@ -23,15 +23,13 @@
 @class DetailView;
 @class ChartViewController;
 
-@interface DetailViewController : UIViewController <LSTableDelegate> {
+@interface DetailViewController : UIViewController <LSSubscriptionDelegate> {
 	DetailView *_detailView;
 	
 	ChartViewController *_chartController;
 	
-	LSSubscribedTableKey *_tableKey;
+	LSSubscription *_subscription;
 
-	dispatch_queue_t _backgroundQueue;
-	
 	NSString *_item;
 	
 	NSMutableDictionary *_itemData;

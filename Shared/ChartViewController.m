@@ -87,10 +87,10 @@
 #pragma mark -
 #pragma mark Updates from Lightstreamer
 
-- (void) itemDidUpdateWithInfo:(LSUpdateInfo *)updateInfo {
+- (void) itemDidUpdateWithInfo:(LSItemUpdate *)itemUpdate {
 	
 	// Extract last point time
-	NSString *timeString= [updateInfo currentValueOfFieldName:@"time"];
+	NSString *timeString= [itemUpdate valueWithFieldName:@"time"];
 	NSDate *updateTime= [_timeFormatter dateFromString:timeString];
 	
 	// Compute the full date knowing the Server lives in the West European time zone
@@ -115,9 +115,9 @@
 	NSTimeInterval time= [updateDate timeIntervalSinceDate:_referenceDate];
 	
 	// Extract last point data
-	float value= [[updateInfo currentValueOfFieldName:@"last_price"] floatValue];
-	float min= [[updateInfo currentValueOfFieldName:@"min"] floatValue];
-	float max= [[updateInfo currentValueOfFieldName:@"max"] floatValue];
+	float value= [[itemUpdate valueWithFieldName:@"last_price"] floatValue];
+	float min= [[itemUpdate valueWithFieldName:@"min"] floatValue];
+	float max= [[itemUpdate valueWithFieldName:@"max"] floatValue];
 	
 	// Update chart
 	_chartView.min= min;

@@ -294,9 +294,9 @@
 									   INTEGER_LABEL_COLOR.CGColor, (id) kCTForegroundColorAttributeName,
 									   nil];
 		
-		float dashPhase= 0.0;
-		float dashLengths[] = { 10.0, 5.0 };
-		CGContextSetLineDash(context, dashPhase, (const CGFloat *) dashLengths, 2);
+		CGFloat dashPhase= 0.0;
+		CGFloat dashLengths[] = { 10.0, 5.0 };
+		CGContextSetLineDash(context, dashPhase, dashLengths, 2);
 		
 		int current= ((int) (_min + 1.0));
 		while (current < _max) {

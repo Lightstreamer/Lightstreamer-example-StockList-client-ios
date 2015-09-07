@@ -37,6 +37,7 @@ Lightstreamer client for iOS/include/LSConnectionStatus.h
 Lightstreamer client for iOS/include/LSException.h
 Lightstreamer client for iOS/include/LSExtendedTableInfo.h
 Lightstreamer client for iOS/include/LSLog.h
+Lightstreamer client for iOS/include/LSLogDelegate.h
 Lightstreamer client for iOS/include/LSMessageDelegate.h
 Lightstreamer client for iOS/include/LSMessageInfo.h
 Lightstreamer client for iOS/include/LSMode.h

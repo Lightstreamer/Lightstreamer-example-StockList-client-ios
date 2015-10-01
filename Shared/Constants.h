@@ -18,7 +18,7 @@
  */
 
 #define PUSH_SERVER_URL            (@"http://localhost:8080/")
-//#define PUSH_SERVER_URL          (@"http://push.lightstreamer.com")
+//#define PUSH_SERVER_URL          (@"https://push.lightstreamer.com")
 #define ADAPTER_SET                (@"DEMO")
 #define DATA_ADAPTER               (@"QUOTE_ADAPTER")
 

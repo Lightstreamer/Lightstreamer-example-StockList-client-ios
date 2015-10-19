@@ -369,6 +369,7 @@
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
 				A9E30C0A24D0384DD44C9248 /* Copy Pods Resources */,
+				202E938BDC0D4B8FE4004066 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -464,6 +465,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		202E938BDC0D4B8FE4004066 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StockList Demo for iOS/Pods-StockList Demo for iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		860BA4A4A78AB08337386F7E /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

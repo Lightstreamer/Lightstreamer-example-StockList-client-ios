@@ -2,7 +2,7 @@
 //  Connector.h
 //  StockList Demo for iOS
 //
-// Copyright 2013 Weswit Srl
+// Copyright (c) Lightstreamer Srl
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.

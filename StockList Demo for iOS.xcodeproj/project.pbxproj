@@ -10,14 +10,12 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		2247461C680883B30BF6FDD0 /* libPods-StockList Demo for iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6A5A93D6209BD6CA3DAC51 /* libPods-StockList Demo for iOS.a */; };
 		2860E328111B887F00E27156 /* AppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E326111B887F00E27156 /* AppDelegate_iPhone.m */; };
 		2860E329111B887F00E27156 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E327111B887F00E27156 /* MainWindow_iPhone.xib */; };
 		2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E32C111B888700E27156 /* AppDelegate_iPad.m */; };
 		2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E32D111B888700E27156 /* MainWindow_iPad.xib */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		8C00FE641884390B009A4F34 /* Connector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C00FE631884390B009A4F34 /* Connector.m */; };
-		8C17AE6A18C78DFA00363347 /* libLightstreamer_iOS_client_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD8D57E186879690021E803 /* libLightstreamer_iOS_client_64.a */; };
 		8C2F040F1869D90500012B38 /* SpecialEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F040E1869D90500012B38 /* SpecialEffects.m */; };
 		8C3DC94A17EB273B0006C18D /* Icon StockList Demo 76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CD91C1D17C2531400EC1B94 /* Icon StockList Demo 76x76.png */; };
 		8C3DC94B17EB273B0006C18D /* Icon StockList Demo 120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CD91C1E17C2531400EC1B94 /* Icon StockList Demo 120x120.png */; };
@@ -39,13 +37,9 @@
 		8C66014C186D90D7008DB46F /* ChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C66014B186D90D7008DB46F /* ChartView.m */; };
 		8C66014F186D90F0008DB46F /* ChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C66014E186D90F0008DB46F /* ChartViewController.m */; };
 		8C660151186DB6D1008DB46F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C660150186DB6D1008DB46F /* CoreText.framework */; };
-		8C6632211B6FC72200D9A191 /* libjre_emul.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6632201B6FC72200D9A191 /* libjre_emul.a */; };
-		8C6632231B6FC73000D9A191 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6632221B6FC73000D9A191 /* libicucore.dylib */; };
-		8C6632251B6FC73500D9A191 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6632241B6FC73500D9A191 /* libz.dylib */; };
 		8C7518E41875BBA700CB61D5 /* UIAlertView+BlockExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7518E31875BBA700CB61D5 /* UIAlertView+BlockExtensions.m */; };
 		8C7A1A3012E4AF770019C2A7 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7A1A2F12E4AF770019C2A7 /* InfoViewController.m */; };
 		8C7A1A3612E4AF8D0019C2A7 /* InfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7A1A3512E4AF8D0019C2A7 /* InfoView.m */; };
-		8C8616301610BDBE00D6F55F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C86162F1610BDBE00D6F55F /* Security.framework */; };
 		8C9C99D017C3C4A10008BA3E /* Icon_disconnected.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C9C99C817C3C1790008BA3E /* Icon_disconnected.png */; };
 		8C9C99D117C3C4A10008BA3E /* Icon_disconnected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C9C99C917C3C1790008BA3E /* Icon_disconnected@2x.png */; };
 		8C9C99D217C3C4A10008BA3E /* Icon_polling.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C9C99CA17C3C1790008BA3E /* Icon_polling.png */; };
@@ -75,6 +69,7 @@
 		8CED1862132FD32900F92DFE /* StatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CED1861132FD32500F92DFE /* StatusView.m */; };
 		8CFDB3D2189284CD009D8BD1 /* Icon_connecting.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CFDB3D0189284CD009D8BD1 /* Icon_connecting.png */; };
 		8CFDB3D3189284CD009D8BD1 /* Icon_connecting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CFDB3D1189284CD009D8BD1 /* Icon_connecting@2x.png */; };
+		F8048E2E99AA7D8546E16A60 /* libPods-StockList Demo for iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6A5A93D6209BD6CA3DAC51 /* libPods-StockList Demo for iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -177,16 +172,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C6632251B6FC73500D9A191 /* libz.dylib in Frameworks */,
-				8C6632231B6FC73000D9A191 /* libicucore.dylib in Frameworks */,
-				8C6632211B6FC72200D9A191 /* libjre_emul.a in Frameworks */,
-				8C17AE6A18C78DFA00363347 /* libLightstreamer_iOS_client_64.a in Frameworks */,
 				8C660151186DB6D1008DB46F /* CoreText.framework in Frameworks */,
-				8C8616301610BDBE00D6F55F /* Security.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
-				2247461C680883B30BF6FDD0 /* libPods-StockList Demo for iOS.a in Frameworks */,
+				F8048E2E99AA7D8546E16A60 /* libPods-StockList Demo for iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,7 +539,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				ENABLE_BITCODE = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -572,7 +561,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = StockList_Demo_for_iOS_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;

@@ -32,12 +32,6 @@
 - (BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     application.statusBarStyle= UIStatusBarStyleLightContent;
 	
-	// Uncomment for detailed logging
-//	[LSLog enableSourceType:LOG_SRC_CLIENT];
-//	[LSLog enableSourceType:LOG_SRC_SESSION];
-//	[LSLog enableSourceType:LOG_SRC_STATE_MACHINE];
-//	[LSLog enableSourceType:LOG_SRC_URL_DISPATCHER];
-
 	// Create the user interface
 	_stockListController= [[StockListViewController alloc] init];
 	

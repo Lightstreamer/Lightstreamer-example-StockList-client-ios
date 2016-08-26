@@ -47,7 +47,10 @@ static Connector *__sharedInstace= nil;
 - (id) init {
 	if ((self = [super init])) {
 		
-		// Initialization
+        // Uncomment to enable detailed logging
+//      [LSLightstreamerClient setLoggerProvider:[[LSConsoleLoggerProvider alloc] initWithLevel:LSConsoleLogLevelDebug]];
+
+        // Initialization
 		_client= [[LSLightstreamerClient alloc] initWithServerAddress:PUSH_SERVER_URL adapterSet:ADAPTER_SET];
 		[_client addDelegate:self];
 	}

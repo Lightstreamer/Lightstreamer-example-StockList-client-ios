@@ -69,11 +69,10 @@
 		8CED1862132FD32900F92DFE /* StatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CED1861132FD32500F92DFE /* StatusView.m */; };
 		8CFDB3D2189284CD009D8BD1 /* Icon_connecting.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CFDB3D0189284CD009D8BD1 /* Icon_connecting.png */; };
 		8CFDB3D3189284CD009D8BD1 /* Icon_connecting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CFDB3D1189284CD009D8BD1 /* Icon_connecting@2x.png */; };
-		F8048E2E99AA7D8546E16A60 /* libPods-StockList Demo for iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6A5A93D6209BD6CA3DAC51 /* libPods-StockList Demo for iOS.a */; };
+		B60EC6C4A94CDAAC3984F1F3 /* libPods-StockList Demo for iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC261946018EFBB7FED756C7 /* libPods-StockList Demo for iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		03DEDB1AE2F1BC4DCD2B6337 /* Pods-StockList Demo for iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockList Demo for iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StockList Demo for iOS/Pods-StockList Demo for iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* Lightstreamer StockList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lightstreamer StockList.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -86,7 +85,7 @@
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* StockList_Demo_for_iOS_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockList_Demo_for_iOS_Prefix.pch; sourceTree = "<group>"; };
-		5A3F7A84BBBB949BE437FF66 /* Pods-StockList Demo for iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockList Demo for iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StockList Demo for iOS/Pods-StockList Demo for iOS.release.xcconfig"; sourceTree = "<group>"; };
+		8BB0A9F5FBADAA7C1A16DEE5 /* Pods-StockList Demo for iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockList Demo for iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StockList Demo for iOS/Pods-StockList Demo for iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		8C00FE621884390B009A4F34 /* Connector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Connector.h; path = Shared/Connector.h; sourceTree = "<group>"; };
 		8C00FE631884390B009A4F34 /* Connector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Connector.m; path = Shared/Connector.m; sourceTree = "<group>"; };
 		8C2F040D1869D90500012B38 /* SpecialEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpecialEffects.h; path = Shared/SpecialEffects.h; sourceTree = "<group>"; };
@@ -164,7 +163,8 @@
 		8CFDB3D0189284CD009D8BD1 /* Icon_connecting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_connecting.png; sourceTree = "<group>"; };
 		8CFDB3D1189284CD009D8BD1 /* Icon_connecting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_connecting@2x.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* StockList_Demo_for_iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "StockList_Demo_for_iOS-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		EF6A5A93D6209BD6CA3DAC51 /* libPods-StockList Demo for iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StockList Demo for iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC261946018EFBB7FED756C7 /* libPods-StockList Demo for iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StockList Demo for iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE8F40CBC3C08EE3A2CF81FF /* Pods-StockList Demo for iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockList Demo for iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StockList Demo for iOS/Pods-StockList Demo for iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,7 +176,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
-				F8048E2E99AA7D8546E16A60 /* libPods-StockList Demo for iOS.a in Frameworks */,
+				B60EC6C4A94CDAAC3984F1F3 /* libPods-StockList Demo for iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +271,7 @@
 				29B97315FDCFA39411CA2CEA /* Other Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				57F1CBAA97C793FFEAAEC641 /* Pods */,
+				B4C8F6422C7BFE634ADD7094 /* Pods */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -308,18 +308,9 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
-				EF6A5A93D6209BD6CA3DAC51 /* libPods-StockList Demo for iOS.a */,
+				CC261946018EFBB7FED756C7 /* libPods-StockList Demo for iOS.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		57F1CBAA97C793FFEAAEC641 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				03DEDB1AE2F1BC4DCD2B6337 /* Pods-StockList Demo for iOS.debug.xcconfig */,
-				5A3F7A84BBBB949BE437FF66 /* Pods-StockList Demo for iOS.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		8C1DC8A912AD3B960028E44A /* Graphics */ = {
@@ -347,6 +338,15 @@
 			path = Shared/Graphics;
 			sourceTree = "<group>";
 		};
+		B4C8F6422C7BFE634ADD7094 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BB0A9F5FBADAA7C1A16DEE5 /* Pods-StockList Demo for iOS.debug.xcconfig */,
+				DE8F40CBC3C08EE3A2CF81FF /* Pods-StockList Demo for iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -354,12 +354,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "StockList Demo for iOS" */;
 			buildPhases = (
-				860BA4A4A78AB08337386F7E /* Check Pods Manifest.lock */,
+				6F4232DB91BF54CC0598A1A5 /* 📦 Check Pods Manifest.lock */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
-				A9E30C0A24D0384DD44C9248 /* Copy Pods Resources */,
-				202E938BDC0D4B8FE4004066 /* Embed Pods Frameworks */,
+				007515959AE58D1D489DA7E8 /* 📦 Embed Pods Frameworks */,
+				EF770EA06AE58880F9E2C0ED /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -455,14 +455,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		202E938BDC0D4B8FE4004066 /* Embed Pods Frameworks */ = {
+		007515959AE58D1D489DA7E8 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,14 +470,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StockList Demo for iOS/Pods-StockList Demo for iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		860BA4A4A78AB08337386F7E /* Check Pods Manifest.lock */ = {
+		6F4232DB91BF54CC0598A1A5 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,14 +485,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		A9E30C0A24D0384DD44C9248 /* Copy Pods Resources */ = {
+		EF770EA06AE58880F9E2C0ED /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -532,12 +532,11 @@
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03DEDB1AE2F1BC4DCD2B6337 /* Pods-StockList Demo for iOS.debug.xcconfig */;
+			baseConfigurationReference = 8BB0A9F5FBADAA7C1A16DEE5 /* Pods-StockList Demo for iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -554,12 +553,11 @@
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A3F7A84BBBB949BE437FF66 /* Pods-StockList Demo for iOS.release.xcconfig */;
+			baseConfigurationReference = DE8F40CBC3C08EE3A2CF81FF /* Pods-StockList Demo for iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = StockList_Demo_for_iOS_Prefix.pch;

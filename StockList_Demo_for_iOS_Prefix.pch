@@ -5,5 +5,5 @@
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
     #import <UIKit/UIKit.h>
-	#import <LightstreamerClientAll.h>
+	#import <Lightstreamer_iOS_Client/Lightstreamer_iOS_Client.h>
 #endif

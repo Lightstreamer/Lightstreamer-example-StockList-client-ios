@@ -26,7 +26,7 @@
 #define PUSH_SERVER_URL            (@"https://push.lightstreamer.com")
 #define ADAPTER_SET                (@"DEMO")
 #define DATA_ADAPTER               (@"QUOTE_ADAPTER")
-*/
+ */
 
 #define NUMBER_OF_ITEMS            (30)
 #define NUMBER_OF_LIST_FIELDS      (4)

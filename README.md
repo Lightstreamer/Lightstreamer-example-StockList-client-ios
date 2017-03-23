@@ -9,7 +9,7 @@ A version with full support for mobile push notifications (MPN) is also availabl
 ## Live Demo
 
 [![screenshot](screenshot_newlarge.png)](https://itunes.apple.com/us/app/lightstreamer-stock-list/id930445387?mt=8)<br>
-###[![](http://demos.lightstreamer.com/site/img/play.png) View live demo](https://itunes.apple.com/us/app/lightstreamer-stock-list/id930445387?mt=8)<br>
+### [![](http://demos.lightstreamer.com/site/img/play.png) View live demo](https://itunes.apple.com/us/app/lightstreamer-stock-list/id930445387?mt=8)<br>
 
 ## Details
 

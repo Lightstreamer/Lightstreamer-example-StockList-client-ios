@@ -72,6 +72,6 @@ Done this, the app should run correctly on your test device and connect to your 
 
 ## Lightstreamer Compatibility Notes
 
-* Compatible with Lightstreamer iOS Client Library version 2.0.0-a1 or newer.
+* Compatible with Lightstreamer iOS Client Library version 3.0.0-beta or newer.
 * For Lightstreamer Allegro (+ iOS Client API support), Presto, Vivace.
 * For a version of this example compatible with Lightstreamer iOS Client API version 1.x, please refer to [this tag](https://github.com/Lightstreamer/Lightstreamer-example-StockList-client-ios/tree/latest-for-client-1.x).

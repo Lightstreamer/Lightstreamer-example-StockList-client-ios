@@ -7,6 +7,6 @@ project 'StockList Demo for iOS.xcodeproj'
 target 'StockList Demo for iOS' do
     platform :ios, '8.0'
     project 'StockList Demo for iOS.xcodeproj'
-    pod 'Lightstreamer_iOS_Client', '2.1.2'
+    pod 'Lightstreamer_iOS_Client', '3.0.0-beta'
 end
 

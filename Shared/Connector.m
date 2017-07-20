@@ -124,7 +124,7 @@ static Connector *__sharedInstace= nil;
 	}
 }
 
-- (void) client:(nonnull LSLightstreamerClient *)client didReceiveServerError:(NSInteger)errorCode withMessage:(nullable NSString *)errorMessage {
+- (void) client:(nonnull LSLightstreamerClient *)client didReceiveServerError:(NSInteger)errorCode withMessage:(nonnull NSString *)errorMessage {
 	NSLog(@"Connector: server error: %ld - %@", (long) errorCode, errorMessage);
 	
 	[[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_CONN_STATUS object:self];

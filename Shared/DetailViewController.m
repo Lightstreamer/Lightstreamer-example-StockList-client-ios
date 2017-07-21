@@ -83,6 +83,7 @@
 }
 
 - (void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
 	
 	// Reset size of chart
 	[_chartController.view setFrame:CGRectMake(0.0, 0.0, _detailView.chartBackgroundView.frame.size.width, _detailView.chartBackgroundView.frame.size.height)];
@@ -98,6 +99,8 @@
 	
 		_subscription= nil;
 	}
+    
+    [super viewDidDisappear:animated];
 }
 
 

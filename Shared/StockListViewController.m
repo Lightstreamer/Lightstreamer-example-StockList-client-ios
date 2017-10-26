@@ -517,7 +517,7 @@
 	double previousLastPrice= 0.0;
 	for (NSString *fieldName in LIST_FIELDS) {
 		
-		// Save previous last price to choose blick color later
+		// Save previous last price to choose blink color later
 		if ([fieldName isEqualToString:@"last_price"])
 			previousLastPrice= [[item objectForKey:fieldName] doubleValue];
 

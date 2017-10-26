@@ -75,7 +75,7 @@ static Connector *__sharedInstace= nil;
 }
 
 - (void) unsubscribe:(LSSubscription *)subscription {
-	NSLog(@"Connector: subscribing...");
+	NSLog(@"Connector: unsubscribing...");
 
 	[_client unsubscribe:subscription];
 }

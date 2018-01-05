@@ -82,11 +82,11 @@
 	[_detailView.chartBackgroundView addSubview:_chartController.view];
 }
 
-- (void) viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-	
-	// Reset size of chart
-	[_chartController.view setFrame:CGRectMake(0.0, 0.0, _detailView.chartBackgroundView.frame.size.width, _detailView.chartBackgroundView.frame.size.height)];
+- (void) viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
+    // Reset size of chart
+    [_chartController.view setFrame:CGRectMake(0.0, 0.0, _detailView.chartBackgroundView.frame.size.width, _detailView.chartBackgroundView.frame.size.height)];
 }
 
 - (void) viewDidDisappear:(BOOL)animated {
@@ -240,9 +240,9 @@
 		
 		double pctChange= [[_itemData objectForKey:@"pct_change"] doubleValue];
 		if (pctChange > 0.0)
-			_detailView.dirImage.image= [UIImage imageNamed:@"Arrow-up.png"];
+			_detailView.dirImage.image= [UIImage imageNamed:@"Arrow-up"];
 		else if (pctChange < 0.0)
-			_detailView.dirImage.image= [UIImage imageNamed:@"Arrow-down.png"];
+			_detailView.dirImage.image= [UIImage imageNamed:@"Arrow-down"];
 		else
 			_detailView.dirImage.image= nil;
 		

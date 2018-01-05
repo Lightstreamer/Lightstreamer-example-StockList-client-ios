@@ -358,14 +358,14 @@
 		
 		NSString *middleLabel= [formatter stringFromDate:[NSDate dateWithTimeIntervalSinceReferenceDate:(_begin + _end) / 2.0]];
 		NSAttributedString *middleLabelAttr= [[NSAttributedString alloc] initWithString:middleLabel attributes:attributesDict];
-		CGContextSetTextPosition(context, LEFT_AXIS_MARGIN + ((size.width - LEFT_AXIS_MARGIN) / 2.0) - (FONT_SIZE * 2.0), size.height - 5.0);
+		CGContextSetTextPosition(context, LEFT_AXIS_MARGIN + ((size.width - LEFT_AXIS_MARGIN) / 2.0) - (middleLabelAttr.size.width / 2.0), size.height - 5.0);
 		line= CTLineCreateWithAttributedString((CFAttributedStringRef) middleLabelAttr);
 		CTLineDraw(line, context);
 		CFRelease(line);
 		
 		NSString *endLabel= [formatter stringFromDate:[NSDate dateWithTimeIntervalSinceReferenceDate:_end]];
 		NSAttributedString *endLabelAttr= [[NSAttributedString alloc] initWithString:endLabel attributes:attributesDict];
-		CGContextSetTextPosition(context, size.width - (FONT_SIZE * 4.0), size.height - 5.0);
+		CGContextSetTextPosition(context, size.width - endLabelAttr.size.width, size.height - 5.0);
 		line= CTLineCreateWithAttributedString((CFAttributedStringRef) endLabelAttr);
 		CTLineDraw(line, context);
 		CFRelease(line);

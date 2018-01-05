@@ -1,9 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -11,12 +20,12 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" id="pM9-em-bi1">
-                    <rect key="frame" x="20" y="84" width="280" height="186"/>
+                <view contentMode="scaleToFill" misplaced="YES" id="pM9-em-bi1">
+                    <rect key="frame" x="20" y="94" width="280" height="215"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Connected in polling mode" lineBreakMode="tailTruncation" minimumFontSize="10" id="R1Y-MN-o5p">
-                            <rect key="frame" x="28" y="87" width="205" height="21"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Connected with HTTP polling" lineBreakMode="tailTruncation" minimumFontSize="10" id="R1Y-MN-o5p">
+                            <rect key="frame" x="28" y="116" width="220" height="21"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -29,22 +38,22 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Connected in streaming mode" lineBreakMode="tailTruncation" minimumFontSize="10" id="ufz-zY-AkM">
-                            <rect key="frame" x="28" y="58" width="230" height="21"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Connected with WS streaming" lineBreakMode="tailTruncation" minimumFontSize="10" id="ufz-zY-AkM">
+                            <rect key="frame" x="28" y="58" width="246" height="21"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Disconnected" lineBreakMode="tailTruncation" minimumFontSize="10" id="44N-cG-K3Y">
-                            <rect key="frame" x="28" y="145" width="104" height="21"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Disconnected" lineBreakMode="tailTruncation" minimumFontSize="10" id="44N-cG-K3Y">
+                            <rect key="frame" x="28" y="174" width="104" height="21"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Connection stalled" lineBreakMode="tailTruncation" minimumFontSize="10" id="lDL-Rk-Bbf">
-                            <rect key="frame" x="28" y="116" width="142" height="21"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Connection stalled" lineBreakMode="tailTruncation" minimumFontSize="10" id="lDL-Rk-Bbf">
+                            <rect key="frame" x="28" y="145" width="142" height="21"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -57,39 +66,52 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Icon_disconnected.png" id="QDQ-YX-0LR">
-                            <rect key="frame" x="0.0" y="146" width="20" height="20"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="Icon-disconnected" id="QDQ-YX-0LR">
+                            <rect key="frame" x="0.0" y="175" width="20" height="20"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Icon_streaming.png" id="Mf7-eF-pce">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Icon-WS-streaming" id="Mf7-eF-pce">
                             <rect key="frame" x="0.0" y="59" width="20" height="20"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Icon_polling.png" id="4YT-aT-Hec">
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Connected with HTTP streaming" lineBreakMode="tailTruncation" minimumFontSize="10" id="LMR-dl-CaT">
+                            <rect key="frame" x="28" y="87" width="246" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="Icon-HTTP-streaming" id="2dL-Ef-aLY">
                             <rect key="frame" x="0.0" y="88" width="20" height="20"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Icon_stalled.png" id="smm-6f-iRs">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="Icon-polling" id="4YT-aT-Hec">
                             <rect key="frame" x="0.0" y="117" width="20" height="20"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Icon_connecting.png" id="Bfa-N9-kFO">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="Icon-stalled" id="smm-6f-iRs">
+                            <rect key="frame" x="0.0" y="146" width="20" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Icon-connecting" id="Bfa-N9-kFO">
                             <rect key="frame" x="0.0" y="30" width="20" height="20"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
     <resources>
-        <image name="Icon_connecting.png" width="20" height="20"/>
-        <image name="Icon_disconnected.png" width="20" height="20"/>
-        <image name="Icon_polling.png" width="20" height="20"/>
-        <image name="Icon_stalled.png" width="20" height="20"/>
-        <image name="Icon_streaming.png" width="20" height="20"/>
+        <image name="Icon-HTTP-streaming" width="20" height="20"/>
+        <image name="Icon-WS-streaming" width="20" height="20"/>
+        <image name="Icon-connecting" width="20" height="20"/>
+        <image name="Icon-disconnected" width="20" height="20"/>
+        <image name="Icon-polling" width="20" height="20"/>
+        <image name="Icon-stalled" width="20" height="20"/>
     </resources>
 </document>

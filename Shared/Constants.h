@@ -66,7 +66,7 @@
 #define INFO_IPAD_HEIGHT           (400.0)
 
 #define STATUS_IPAD_WIDTH          (400.0)
-#define STATUS_IPAD_HEIGHT         (200.0)
+#define STATUS_IPAD_HEIGHT         (230.0)
 
 // Thanks to Carl Jahn for the following macros
 // https://github.com/carlj/CJAMacros/blob/master/CJAMacros/CJAMacros.h

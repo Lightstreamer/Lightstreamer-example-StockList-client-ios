@@ -161,11 +161,11 @@
 	self.tableView= _stockListView.table;
 	self.view= _stockListView;
 	
-	_infoButton= [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"Info.png"] style:UIBarButtonItemStylePlain target:self action:@selector(infoTapped)];
+	_infoButton= [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"Info"] style:UIBarButtonItemStylePlain target:self action:@selector(infoTapped)];
     _infoButton.tintColor= [UIColor whiteColor];
 	self.navigationItem.rightBarButtonItem= _infoButton;
 	
-	_statusButton= [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"Icon_disconnected.png"] style:UIBarButtonItemStylePlain target:self action:@selector(statusTapped)];
+	_statusButton= [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"Icon-disconnected"] style:UIBarButtonItemStylePlain target:self action:@selector(statusTapped)];
     _statusButton.tintColor= [UIColor whiteColor];
 	self.navigationItem.leftBarButtonItem= _statusButton;
 	
@@ -273,9 +273,9 @@
 
 		double pctChange= [[item objectForKey:@"pct_change"] doubleValue];
 		if (pctChange > 0.0)
-			cell.dirImage.image= [UIImage imageNamed:@"Arrow-up.png"];
+			cell.dirImage.image= [UIImage imageNamed:@"Arrow-up"];
 		else if (pctChange < 0.0)
-			cell.dirImage.image= [UIImage imageNamed:@"Arrow-down.png"];
+			cell.dirImage.image= [UIImage imageNamed:@"Arrow-down"];
 		else
 			cell.dirImage.image= nil;
 
@@ -415,21 +415,25 @@
 		
 		// Update connection status icon
 		if ([[[Connector sharedConnector] connectionStatus] hasPrefix:@"DISCONNECTED"]) {
-			self.navigationItem.leftBarButtonItem.image= [UIImage imageNamed:@"Icon_disconnected.png"];
+			self.navigationItem.leftBarButtonItem.image= [UIImage imageNamed:@"Icon-disconnected"];
 			
 		} else if ([[[Connector sharedConnector] connectionStatus] hasPrefix:@"CONNECTING"]) {
-			self.navigationItem.leftBarButtonItem.image= [UIImage imageNamed:@"Icon_connecting.png"];
+			self.navigationItem.leftBarButtonItem.image= [UIImage imageNamed:@"Icon-connecting"];
 			
 		} else if ([[[Connector sharedConnector] connectionStatus] hasPrefix:@"STALLED"]) {
-			self.navigationItem.leftBarButtonItem.image= [UIImage imageNamed:@"Icon_stalled.png"];
+			self.navigationItem.leftBarButtonItem.image= [UIImage imageNamed:@"Icon-stalled"];
 			
 		} else if ([[[Connector sharedConnector] connectionStatus] hasPrefix:@"CONNECTED"] &&
 				   [[[Connector sharedConnector] connectionStatus] hasSuffix:@"POLLING"]) {
-			self.navigationItem.leftBarButtonItem.image= [UIImage imageNamed:@"Icon_polling.png"];
+			self.navigationItem.leftBarButtonItem.image= [UIImage imageNamed:@"Icon-polling"];
 			
 		} else if ([[[Connector sharedConnector] connectionStatus] hasPrefix:@"CONNECTED"] &&
-				   [[[Connector sharedConnector] connectionStatus] hasSuffix:@"STREAMING"]) {
-			self.navigationItem.leftBarButtonItem.image= [UIImage imageNamed:@"Icon_streaming.png"];
+				   [[[Connector sharedConnector] connectionStatus] hasSuffix:@"WS-STREAMING"]) {
+			self.navigationItem.leftBarButtonItem.image= [UIImage imageNamed:@"Icon-WS-streaming"];
+
+        } else if ([[[Connector sharedConnector] connectionStatus] hasPrefix:@"CONNECTED"] &&
+                   [[[Connector sharedConnector] connectionStatus] hasSuffix:@"HTTP-STREAMING"]) {
+            self.navigationItem.leftBarButtonItem.image= [UIImage imageNamed:@"Icon-HTTP-streaming"];
 		}
 		
 		// If the detail controller is visible, set the item on the detail view controller,

@@ -1,0 +1,68 @@
+{
+  "images" : [
+    {
+      "size" : "24x24",
+      "idiom" : "watch",
+      "filename" : "Icon StockWatch Demo 48x48.png",
+      "scale" : "2x",
+      "role" : "notificationCenter",
+      "subtype" : "38mm"
+    },
+    {
+      "size" : "27.5x27.5",
+      "idiom" : "watch",
+      "filename" : "Icon StockWatch Demo 55x55.png",
+      "scale" : "2x",
+      "role" : "notificationCenter",
+      "subtype" : "42mm"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "watch",
+      "filename" : "Icon StockWatch Demo 58x58.png",
+      "role" : "companionSettings",
+      "scale" : "2x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "watch",
+      "filename" : "Icon StockWatch Demo 87x87.png",
+      "role" : "companionSettings",
+      "scale" : "3x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "watch",
+      "filename" : "Icon StockWatch Demo 80x80.png",
+      "scale" : "2x",
+      "role" : "appLauncher",
+      "subtype" : "38mm"
+    },
+    {
+      "size" : "86x86",
+      "idiom" : "watch",
+      "filename" : "Icon StockWatch Demo 172x172.png",
+      "scale" : "2x",
+      "role" : "quickLook",
+      "subtype" : "38mm"
+    },
+    {
+      "size" : "98x98",
+      "idiom" : "watch",
+      "filename" : "Icon StockWatch Demo 196x196.png",
+      "scale" : "2x",
+      "role" : "quickLook",
+      "subtype" : "42mm"
+    },
+    {
+      "size" : "1024x1024",
+      "idiom" : "watch-marketing",
+      "filename" : "Icon StockWatch Demo 1024x1024.png",
+      "scale" : "1x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

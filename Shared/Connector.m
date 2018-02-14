@@ -53,6 +53,16 @@ static Connector *__sharedInstace= nil;
         // Initialization
 		_client= [[LSLightstreamerClient alloc] initWithServerAddress:PUSH_SERVER_URL adapterSet:ADAPTER_SET];
 		[_client addDelegate:self];
+        
+#if TARGET_OS_WATCH
+        
+        // On watchOS connections are extremely slow (for no apparent reason),
+        // so we raise the timeout and force the HTTP streaming transport,
+        // to reduce the number of connections required
+        [_client.connectionOptions setConnectTimeout:@"15"];
+        [_client.connectionOptions setForcedTransport:@"HTTP-STREAMING"];
+        
+#endif // TARGET_OS_WATCH
 	}
 	
 	return self;

@@ -15,6 +15,7 @@
 		2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E32C111B888700E27156 /* AppDelegate_iPad.m */; };
 		2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E32D111B888700E27156 /* MainWindow_iPad.xib */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		6F11A367175C03EA4540F5E5 /* Pods_StockWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D4862AB2FE14DB520B71DE8 /* Pods_StockWatch_Extension.framework */; };
 		8C00FE641884390B009A4F34 /* Connector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C00FE631884390B009A4F34 /* Connector.m */; };
 		8C2E353D1FFD321300D6020F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2E353C1FFD321300D6020F /* Media.xcassets */; };
 		8C2F040F1869D90500012B38 /* SpecialEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F040E1869D90500012B38 /* SpecialEffects.m */; };
@@ -30,6 +31,15 @@
 		8CA3C26117C3A78C005598B5 /* StatusView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C26017C3A78C005598B5 /* StatusView_iPhone.xib */; };
 		8CA3C26517C3A92B005598B5 /* InfoView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C26417C3A92B005598B5 /* InfoView_iPad.xib */; };
 		8CA3C26717C3A937005598B5 /* StatusView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C26617C3A937005598B5 /* StatusView_iPad.xib */; };
+		8CB7600F203471820099AA49 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CB7600D203471820099AA49 /* Interface.storyboard */; };
+		8CB76011203471820099AA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CB76010203471820099AA49 /* Assets.xcassets */; };
+		8CB76018203471820099AA49 /* StockWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8CB76017203471820099AA49 /* StockWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8CB7601E203471820099AA49 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7601D203471820099AA49 /* InterfaceController.m */; };
+		8CB76021203471820099AA49 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB76020203471820099AA49 /* ExtensionDelegate.m */; };
+		8CB76023203471820099AA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CB76022203471820099AA49 /* Assets.xcassets */; };
+		8CB76028203471820099AA49 /* StockWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8CB7600B203471810099AA49 /* StockWatch.app */; };
+		8CB76032203476410099AA49 /* WatchSpecialEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB76031203476410099AA49 /* WatchSpecialEffects.m */; };
+		8CB76034203477F60099AA49 /* Connector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C00FE631884390B009A4F34 /* Connector.m */; };
 		8CD113AD12A01DFC0047C173 /* StockListView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD113AC12A01DFC0047C173 /* StockListView_iPad.xib */; };
 		8CD113B012A01E600047C173 /* StockListView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD113AF12A01E600047C173 /* StockListView_iPhone.xib */; };
 		8CD113B412A01EEE0047C173 /* StockListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD113B312A01EEE0047C173 /* StockListViewController.m */; };
@@ -47,6 +57,48 @@
 		D7495F6815010A30FEC17094 /* Pods_StockList_Demo_for_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBB1FE32AC448956B786F4F /* Pods_StockList_Demo_for_iOS.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8CB76019203471820099AA49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CB76016203471820099AA49;
+			remoteInfo = "StockWatch Extension";
+		};
+		8CB76025203471820099AA49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CB7600A203471810099AA49;
+			remoteInfo = StockWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8CB76027203471820099AA49 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8CB76028203471820099AA49 /* StockWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CB7602E203471820099AA49 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8CB76018203471820099AA49 /* StockWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* Lightstreamer StockList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lightstreamer StockList.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,7 +111,9 @@
 		2860E32D111B888700E27156 /* MainWindow_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow_iPad.xib; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
+		2D4862AB2FE14DB520B71DE8 /* Pods_StockWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32CA4F630368D1EE00C91783 /* StockList_Demo_for_iOS_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockList_Demo_for_iOS_Prefix.pch; sourceTree = "<group>"; };
+		64E33883E0955BDC7F313397 /* Pods-StockWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-StockWatch Extension/Pods-StockWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
 		8BB0A9F5FBADAA7C1A16DEE5 /* Pods-StockList Demo for iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockList Demo for iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StockList Demo for iOS/Pods-StockList Demo for iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		8C00FE621884390B009A4F34 /* Connector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Connector.h; path = Shared/Connector.h; sourceTree = "<group>"; };
 		8C00FE631884390B009A4F34 /* Connector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Connector.m; path = Shared/Connector.m; sourceTree = "<group>"; };
@@ -85,6 +139,20 @@
 		8CA3C26017C3A78C005598B5 /* StatusView_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatusView_iPhone.xib; sourceTree = "<group>"; };
 		8CA3C26417C3A92B005598B5 /* InfoView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoView_iPad.xib; sourceTree = "<group>"; };
 		8CA3C26617C3A937005598B5 /* StatusView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatusView_iPad.xib; sourceTree = "<group>"; };
+		8CB7600B203471810099AA49 /* StockWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CB7600E203471820099AA49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8CB76010203471820099AA49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CB76012203471820099AA49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CB76017203471820099AA49 /* StockWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "StockWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CB7601C203471820099AA49 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		8CB7601D203471820099AA49 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		8CB7601F203471820099AA49 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		8CB76020203471820099AA49 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		8CB76022203471820099AA49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CB76024203471820099AA49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CB76030203476410099AA49 /* WatchSpecialEffects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WatchSpecialEffects.h; sourceTree = "<group>"; };
+		8CB76031203476410099AA49 /* WatchSpecialEffects.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatchSpecialEffects.m; sourceTree = "<group>"; };
+		8CB76033203476540099AA49 /* StockWatch_Demo_for_watchOS_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockWatch_Demo_for_watchOS_Prefix.pch; sourceTree = "<group>"; };
 		8CC6A4801524C7F7003FB6C0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8CD113AC12A01DFC0047C173 /* StockListView_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockListView_iPad.xib; sourceTree = "<group>"; };
 		8CD113AF12A01E600047C173 /* StockListView_iPhone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockListView_iPhone.xib; sourceTree = "<group>"; };
@@ -109,6 +177,7 @@
 		8CED1860132FD32300F92DFE /* StatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatusView.h; path = Shared/StatusView.h; sourceTree = "<group>"; };
 		8CED1861132FD32500F92DFE /* StatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatusView.m; path = Shared/StatusView.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* StockList_Demo_for_iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "StockList_Demo_for_iOS-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		A3ACFB4BA083DA606CF69355 /* Pods-StockWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StockWatch Extension/Pods-StockWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		AFBB1FE32AC448956B786F4F /* Pods_StockList_Demo_for_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockList_Demo_for_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE8F40CBC3C08EE3A2CF81FF /* Pods-StockList Demo for iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockList Demo for iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StockList Demo for iOS/Pods-StockList Demo for iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +195,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8CB76014203471820099AA49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F11A367175C03EA4540F5E5 /* Pods_StockWatch_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E21C1F2239D2B2AFEB1ADA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -133,6 +217,8 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* Lightstreamer StockList.app */,
+				8CB7600B203471810099AA49 /* StockWatch.app */,
+				8CB76017203471820099AA49 /* StockWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,6 +302,8 @@
 				2860E324111B887F00E27156 /* iPhone */,
 				28EEBF621118D79A00187D67 /* Shared */,
 				29B97315FDCFA39411CA2CEA /* Other Resources */,
+				8CB7600C203471820099AA49 /* StockWatch */,
+				8CB7601B203471820099AA49 /* StockWatch Extension */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				B4C8F6422C7BFE634ADD7094 /* Pods */,
@@ -242,8 +330,35 @@
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				AFBB1FE32AC448956B786F4F /* Pods_StockList_Demo_for_iOS.framework */,
+				2D4862AB2FE14DB520B71DE8 /* Pods_StockWatch_Extension.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CB7600C203471820099AA49 /* StockWatch */ = {
+			isa = PBXGroup;
+			children = (
+				8CB7600D203471820099AA49 /* Interface.storyboard */,
+				8CB76010203471820099AA49 /* Assets.xcassets */,
+				8CB76012203471820099AA49 /* Info.plist */,
+			);
+			path = StockWatch;
+			sourceTree = "<group>";
+		};
+		8CB7601B203471820099AA49 /* StockWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8CB7601C203471820099AA49 /* InterfaceController.h */,
+				8CB7601D203471820099AA49 /* InterfaceController.m */,
+				8CB7601F203471820099AA49 /* ExtensionDelegate.h */,
+				8CB76020203471820099AA49 /* ExtensionDelegate.m */,
+				8CB76030203476410099AA49 /* WatchSpecialEffects.h */,
+				8CB76031203476410099AA49 /* WatchSpecialEffects.m */,
+				8CB76022203471820099AA49 /* Assets.xcassets */,
+				8CB76024203471820099AA49 /* Info.plist */,
+				8CB76033203476540099AA49 /* StockWatch_Demo_for_watchOS_Prefix.pch */,
+			);
+			path = "StockWatch Extension";
 			sourceTree = "<group>";
 		};
 		B4C8F6422C7BFE634ADD7094 /* Pods */ = {
@@ -251,6 +366,8 @@
 			children = (
 				8BB0A9F5FBADAA7C1A16DEE5 /* Pods-StockList Demo for iOS.debug.xcconfig */,
 				DE8F40CBC3C08EE3A2CF81FF /* Pods-StockList Demo for iOS.release.xcconfig */,
+				A3ACFB4BA083DA606CF69355 /* Pods-StockWatch Extension.debug.xcconfig */,
+				64E33883E0955BDC7F313397 /* Pods-StockWatch Extension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -268,15 +385,55 @@
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
 				007515959AE58D1D489DA7E8 /* [CP] Embed Pods Frameworks */,
 				EF770EA06AE58880F9E2C0ED /* [CP] Copy Pods Resources */,
+				8CB76027203471820099AA49 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8CB76026203471820099AA49 /* PBXTargetDependency */,
 			);
 			name = "StockList Demo for iOS";
 			productName = "StockList Demo for iOS";
 			productReference = 1D6058910D05DD3D006BFB54 /* Lightstreamer StockList.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8CB7600A203471810099AA49 /* StockWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CB7602F203471820099AA49 /* Build configuration list for PBXNativeTarget "StockWatch" */;
+			buildPhases = (
+				8CB76009203471810099AA49 /* Resources */,
+				8CB7602E203471820099AA49 /* Embed App Extensions */,
+				A5E21C1F2239D2B2AFEB1ADA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CB7601A203471820099AA49 /* PBXTargetDependency */,
+			);
+			name = StockWatch;
+			productName = StockWatch;
+			productReference = 8CB7600B203471810099AA49 /* StockWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8CB76016203471820099AA49 /* StockWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CB7602D203471820099AA49 /* Build configuration list for PBXNativeTarget "StockWatch Extension" */;
+			buildPhases = (
+				54E01150199D444F28D7A5D6 /* [CP] Check Pods Manifest.lock */,
+				8CB76013203471820099AA49 /* Sources */,
+				8CB76014203471820099AA49 /* Frameworks */,
+				8CB76015203471820099AA49 /* Resources */,
+				9287E2AB282BD8A39AF82DD8 /* [CP] Embed Pods Frameworks */,
+				B6C5FDD59226A255AC4EC685 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "StockWatch Extension";
+			productName = "StockWatch Extension";
+			productReference = 8CB76017203471820099AA49 /* StockWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -290,6 +447,16 @@
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = 7PGFJN8WH5;
 					};
+					8CB7600A203471810099AA49 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = 7PGFJN8WH5;
+						ProvisioningStyle = Automatic;
+					};
+					8CB76016203471820099AA49 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = 7PGFJN8WH5;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "StockList Demo for iOS" */;
@@ -301,6 +468,7 @@
 				Japanese,
 				French,
 				German,
+				Base,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
@@ -308,6 +476,8 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* StockList Demo for iOS */,
+				8CB7600A203471810099AA49 /* StockWatch */,
+				8CB76016203471820099AA49 /* StockWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -336,6 +506,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8CB76009203471810099AA49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CB76011203471820099AA49 /* Assets.xcassets in Resources */,
+				8CB7600F203471820099AA49 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CB76015203471820099AA49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CB76023203471820099AA49 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -357,6 +544,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StockList Demo for iOS/Pods-StockList Demo for iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		54E01150199D444F28D7A5D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StockWatch Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6F4232DB91BF54CC0598A1A5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -373,6 +578,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9287E2AB282BD8A39AF82DD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StockWatch Extension/Pods-StockWatch Extension-frameworks.sh",
+				"${PODS_ROOT}/Lightstreamer_watchOS_Client/Lightstreamer_watchOS_Client.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lightstreamer_watchOS_Client.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StockWatch Extension/Pods-StockWatch Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6C5FDD59226A255AC4EC685 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StockWatch Extension/Pods-StockWatch Extension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EF770EA06AE58880F9E2C0ED /* [CP] Copy Pods Resources */ = {
@@ -417,7 +655,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8CB76013203471820099AA49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CB76021203471820099AA49 /* ExtensionDelegate.m in Sources */,
+				8CB76034203477F60099AA49 /* Connector.m in Sources */,
+				8CB7601E203471820099AA49 /* InterfaceController.m in Sources */,
+				8CB76032203476410099AA49 /* WatchSpecialEffects.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CB7601A203471820099AA49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CB76016203471820099AA49 /* StockWatch Extension */;
+			targetProxy = 8CB76019203471820099AA49 /* PBXContainerItemProxy */;
+		};
+		8CB76026203471820099AA49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CB7600A203471810099AA49 /* StockWatch */;
+			targetProxy = 8CB76025203471820099AA49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8CB7600D203471820099AA49 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CB7600E203471820099AA49 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
@@ -464,6 +737,166 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CB76029203471820099AA49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7PGFJN8WH5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IBSC_MODULE = StockWatch_Extension;
+				INFOPLIST_FILE = StockWatch/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lightstreamer.ios.stocklist.nompn.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		8CB7602A203471820099AA49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7PGFJN8WH5;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IBSC_MODULE = StockWatch_Extension;
+				INFOPLIST_FILE = StockWatch/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lightstreamer.ios.stocklist.nompn.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		8CB7602B203471820099AA49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3ACFB4BA083DA606CF69355 /* Pods-StockWatch Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7PGFJN8WH5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StockWatch Extension/StockWatch_Demo_for_watchOS_Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "StockWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lightstreamer.ios.stocklist.nompn.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		8CB7602C203471820099AA49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64E33883E0955BDC7F313397 /* Pods-StockWatch Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7PGFJN8WH5;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StockWatch Extension/StockWatch_Demo_for_watchOS_Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "StockWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lightstreamer.ios.stocklist.nompn.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -548,6 +981,24 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CB7602D203471820099AA49 /* Build configuration list for PBXNativeTarget "StockWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CB7602B203471820099AA49 /* Debug */,
+				8CB7602C203471820099AA49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CB7602F203471820099AA49 /* Build configuration list for PBXNativeTarget "StockWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CB76029203471820099AA49 /* Debug */,
+				8CB7602A203471820099AA49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

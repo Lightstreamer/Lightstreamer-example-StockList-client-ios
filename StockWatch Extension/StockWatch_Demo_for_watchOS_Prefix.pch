@@ -1,0 +1,26 @@
+//
+//  StockWatch_Demo_for_watchOS_Prefix.pch
+//  StockWatch Extension
+//
+// Copyright (c) Lightstreamer Srl
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+// http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+
+#ifndef StockWatch_Demo_for_watchOS_Prefix_pch
+#define StockWatch_Demo_for_watchOS_Prefix_pch
+
+#import <Lightstreamer_watchOS_Client/Lightstreamer_watchOS_Client.h>
+
+#endif /* StockWatch_Demo_for_watchOS_Prefix_pch */
+

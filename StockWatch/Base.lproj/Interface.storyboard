@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <picker height="90" alignment="left" indicatorMode="shownWhileFocused" id="UkX-bs-xuq">
+                            <connections>
+                                <action selector="stockSelected:" destination="AgC-eL-Hgc" id="NQV-ke-pwM"/>
+                            </connections>
+                        </picker>
+                        <separator alignment="left" id="60U-z0-dQj"/>
+                        <group width="1" alignment="left" id="xMD-Rj-sTM">
+                            <items>
+                                <label alignment="left" text="--.--" id="sG0-s4-OAY">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <imageView width="20" height="20" alignment="center" contentMode="center" id="a5v-6G-doP"/>
+                                <label alignment="right" text="-.--%" id="23V-i2-41N">
+                                    <color key="textColor" red="0.0" green="0.81119130709999998" blue="0.02470681295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="5o3-kT-Shj">
+                            <items>
+                                <label alignment="left" text="--.--" id="h4J-Di-dU3">
+                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                </label>
+                                <label alignment="right" text="--:--:--" id="v2w-xK-ajj">
+                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="changeLabel" destination="23V-i2-41N" id="sf2-5a-5ze"/>
+                        <outlet property="dirImage" destination="a5v-6G-doP" id="xpQ-zj-Kpt"/>
+                        <outlet property="lastLabel" destination="sG0-s4-OAY" id="19T-iE-Oa7"/>
+                        <outlet property="openLabel" destination="h4J-Di-dU3" id="9Zr-bc-GGR"/>
+                        <outlet property="priceGroup" destination="xMD-Rj-sTM" id="61y-nc-hkr"/>
+                        <outlet property="stockPicker" destination="UkX-bs-xuq" id="790-90-Faz"/>
+                        <outlet property="timeLabel" destination="v2w-xK-ajj" id="3On-4D-UZb"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

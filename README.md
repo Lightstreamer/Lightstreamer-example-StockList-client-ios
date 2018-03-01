@@ -15,7 +15,7 @@ A version with full support for mobile push notifications (MPN) is also availabl
 
 This app, compatible with both iPhone and iPad, is an Objective-C version of the [Stock-List Demos](https://github.com/Lightstreamer/Lightstreamer-example-Stocklist-client-javascript).<br>
 
-This app uses the <b>iOS Client API for Lightstreamer</b> to handle the communications with Lightstreamer Server. A simple user interface is implemented to display the real-time data received from Lightstreamer Server.<br>
+This app uses the <b>iOS and watchOS Client APIs for Lightstreamer</b> to handle the communications with Lightstreamer Server. A simple user interface is implemented to display the real-time data received from Lightstreamer Server.<br>
 
 ## Install
 
@@ -27,7 +27,7 @@ A full Xcode project specification, ready for compilation of the app sources, is
 
 ### Getting Started
 
-Before you can build this demo, you need to install CocoaPods to handle the project dependency on the Lightstreamer iOS client library (see also the Lightstreamer Compatiblity Notes below).
+Before you can build this demo, you need to install CocoaPods to handle the project dependency on the Lightstreamer iOS and watchOS client libraries (see also the Lightstreamer Compatiblity Notes below).
 
 Follow these steps:
 
@@ -43,7 +43,7 @@ $ sudo gem install cocoapods
 $ pod install
 ```
 
-* CocoaPods should now resolve the dependency on the Lightstreamer iOS client library and prepare a workspace for you.
+* CocoaPods should now resolve the dependency on the Lightstreamer iOS and watchOS client libraries and prepare a workspace for you.
 
 Done this, open the workspace with Xcode and it should compile with no errors. In case of errors during dependency resolution, you can find more information on [CocoaPods official website](https://cocoapods.org).
 
@@ -74,8 +74,6 @@ Done this, the app should run correctly on your test device and connect to your 
 
 ## Lightstreamer Compatibility Notes
 
-* Code compatible with Lightstreamer iOS Client Library version 3.0.0-beta or newer.
-* For Lightstreamer Allegro (+ iOS Client API support), Presto, Vivace. Server compatibility depends on the iOS Client Library in use, which is specified in the `Podfile`:
-  * By default the project uses iOS Client Library version 4.0.0, which requires a Server version 7.0 b2 or newer.
-  * Use iOS Client Library version 3.0.1 for compatibility with Server version 6.1.
+* Code compatible with Lightstreamer iOS and watchOS Client Libraries version 4.0.0 or newer.
+* For Lightstreamer Allegro (+ iOS/watchOS Client API support), Presto, Vivace, version 7.0 b2 or greater.
 * For a version of this example compatible with Lightstreamer iOS Client API version 1.x, please refer to [this tag](https://github.com/Lightstreamer/Lightstreamer-example-StockList-client-ios/tree/latest-for-client-1.x).

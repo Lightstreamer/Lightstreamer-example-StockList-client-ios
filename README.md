@@ -2,7 +2,7 @@
 
 <!-- START DESCRIPTION lightstreamer-example-stocklist-client-ios -->
 
-This project contains an example of an application for iPhone and iPad that employs the [Lightstreamer iOS Client library](http://www.lightstreamer.com/api/ls-ios-client/latest_4_0/). The application also includes a WatchKit extension that employs the [Lightstreamer watchOS Client library](https://www.lightstreamer.com/api/ls-watchos-client/latest/).
+This project contains an example of an application for iPhone and iPad that employs the [Lightstreamer iOS Client library](http://www.lightstreamer.com/api/ls-ios-client/latest/). The application also includes a WatchKit extension that employs the [Lightstreamer watchOS Client library](https://www.lightstreamer.com/api/ls-watchos-client/latest/).
 
 A version with full support for mobile push notifications (MPN) is also available: [Lightstreamer - Stock-List Demo with APNs Push Notifications - iOS Client](https://github.com/Lightstreamer/Lightstreamer-example-MPNStockList-client-ios).
 
@@ -75,5 +75,5 @@ Done this, the app should run correctly on your test device and connect to your 
 ## Lightstreamer Compatibility Notes
 
 * Code compatible with Lightstreamer iOS and watchOS Client Libraries version 4.0.0 or newer.
-* For Lightstreamer Allegro (+ iOS/watchOS Client API support), Presto, Vivace, version 7.0 b2 or greater.
+* For Lightstreamer Server version 7.0 or greater. Ensure that iOS and/or watchOS Client API is supported by Lightstreamer Server license configuration, depending on where the demo will be run.
 * For a version of this example compatible with Lightstreamer iOS Client API version 1.x, please refer to [this tag](https://github.com/Lightstreamer/Lightstreamer-example-StockList-client-ios/tree/latest-for-client-1.x).

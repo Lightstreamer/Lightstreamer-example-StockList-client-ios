@@ -191,7 +191,7 @@
 	dispatch_async(dispatch_get_main_queue(), ^{
 
 		// Forward the update to the chart
-		[_chartController itemDidUpdateWithInfo:itemUpdate];
+        [self->_chartController itemDidUpdateWithInfo:itemUpdate];
 		
 		// Update the view
 		[self updateView];

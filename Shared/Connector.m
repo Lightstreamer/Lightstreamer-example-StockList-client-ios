@@ -59,7 +59,7 @@ static Connector *__sharedInstace= nil;
         // On watchOS connections are extremely slow (for no apparent reason),
         // so we raise the timeout and force the HTTP streaming transport,
         // to reduce the number of connections required
-        [_client.connectionOptions setConnectTimeout:@"15"];
+        _client.connectionOptions.retryDelay= 15.0;
         [_client.connectionOptions setForcedTransport:@"HTTP-STREAMING"];
         
 #endif // TARGET_OS_WATCH

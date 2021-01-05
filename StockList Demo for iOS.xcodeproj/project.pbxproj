@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,6 @@
 		2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E32C111B888700E27156 /* AppDelegate_iPad.m */; };
 		2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E32D111B888700E27156 /* MainWindow_iPad.xib */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
-		6F11A367175C03EA4540F5E5 /* Pods_StockWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D4862AB2FE14DB520B71DE8 /* Pods_StockWatch_Extension.framework */; };
 		8C00FE641884390B009A4F34 /* Connector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C00FE631884390B009A4F34 /* Connector.m */; };
 		8C2E353D1FFD321300D6020F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2E353C1FFD321300D6020F /* Media.xcassets */; };
 		8C2F040F1869D90500012B38 /* SpecialEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F040E1869D90500012B38 /* SpecialEffects.m */; };
@@ -54,7 +53,8 @@
 		8CD8D589186894DC0021E803 /* DetailView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD8D588186894DC0021E803 /* DetailView_iPhone.xib */; };
 		8CED185F132FD30100F92DFE /* StatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CED185E132FD2FF00F92DFE /* StatusViewController.m */; };
 		8CED1862132FD32900F92DFE /* StatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CED1861132FD32500F92DFE /* StatusView.m */; };
-		D7495F6815010A30FEC17094 /* Pods_StockList_Demo_for_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBB1FE32AC448956B786F4F /* Pods_StockList_Demo_for_iOS.framework */; };
+		96F7C924259B822F00D2F760 /* Lightstreamer_iOS_Client in Frameworks */ = {isa = PBXBuildFile; productRef = 96F7C923259B822F00D2F760 /* Lightstreamer_iOS_Client */; };
+		96F7C92D259B828E00D2F760 /* Lightstreamer_watchOS_Client in Frameworks */ = {isa = PBXBuildFile; productRef = 96F7C92C259B828E00D2F760 /* Lightstreamer_watchOS_Client */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,10 +111,7 @@
 		2860E32D111B888700E27156 /* MainWindow_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow_iPad.xib; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
-		2D4862AB2FE14DB520B71DE8 /* Pods_StockWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32CA4F630368D1EE00C91783 /* StockList_Demo_for_iOS_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockList_Demo_for_iOS_Prefix.pch; sourceTree = "<group>"; };
-		64E33883E0955BDC7F313397 /* Pods-StockWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-StockWatch Extension/Pods-StockWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
-		8BB0A9F5FBADAA7C1A16DEE5 /* Pods-StockList Demo for iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockList Demo for iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StockList Demo for iOS/Pods-StockList Demo for iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		8C00FE621884390B009A4F34 /* Connector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Connector.h; path = Shared/Connector.h; sourceTree = "<group>"; };
 		8C00FE631884390B009A4F34 /* Connector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Connector.m; path = Shared/Connector.m; sourceTree = "<group>"; };
 		8C2E353C1FFD321300D6020F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = Shared/Media.xcassets; sourceTree = "<group>"; };
@@ -133,7 +130,6 @@
 		8C7A1A2F12E4AF770019C2A7 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoViewController.m; path = Shared/InfoViewController.m; sourceTree = "<group>"; };
 		8C7A1A3412E4AF8D0019C2A7 /* InfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoView.h; path = Shared/InfoView.h; sourceTree = "<group>"; };
 		8C7A1A3512E4AF8D0019C2A7 /* InfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoView.m; path = Shared/InfoView.m; sourceTree = "<group>"; };
-		8C86162F1610BDBE00D6F55F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		8CA3C25C17C3A747005598B5 /* StockListSection_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StockListSection_iPhone.xib; sourceTree = "<group>"; };
 		8CA3C25E17C3A77F005598B5 /* InfoView_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoView_iPhone.xib; sourceTree = "<group>"; };
 		8CA3C26017C3A78C005598B5 /* StatusView_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatusView_iPhone.xib; sourceTree = "<group>"; };
@@ -153,7 +149,6 @@
 		8CB76030203476410099AA49 /* WatchSpecialEffects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WatchSpecialEffects.h; sourceTree = "<group>"; };
 		8CB76031203476410099AA49 /* WatchSpecialEffects.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatchSpecialEffects.m; sourceTree = "<group>"; };
 		8CB76033203476540099AA49 /* StockWatch_Demo_for_watchOS_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockWatch_Demo_for_watchOS_Prefix.pch; sourceTree = "<group>"; };
-		8CC6A4801524C7F7003FB6C0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8CD113AC12A01DFC0047C173 /* StockListView_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockListView_iPad.xib; sourceTree = "<group>"; };
 		8CD113AF12A01E600047C173 /* StockListView_iPhone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockListView_iPhone.xib; sourceTree = "<group>"; };
 		8CD113B212A01EEE0047C173 /* StockListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StockListViewController.h; path = Shared/StockListViewController.h; sourceTree = "<group>"; };
@@ -177,9 +172,6 @@
 		8CED1860132FD32300F92DFE /* StatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatusView.h; path = Shared/StatusView.h; sourceTree = "<group>"; };
 		8CED1861132FD32500F92DFE /* StatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatusView.m; path = Shared/StatusView.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* StockList_Demo_for_iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "StockList_Demo_for_iOS-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		A3ACFB4BA083DA606CF69355 /* Pods-StockWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StockWatch Extension/Pods-StockWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
-		AFBB1FE32AC448956B786F4F /* Pods_StockList_Demo_for_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockList_Demo_for_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE8F40CBC3C08EE3A2CF81FF /* Pods-StockList Demo for iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockList Demo for iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StockList Demo for iOS/Pods-StockList Demo for iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,10 +180,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C660151186DB6D1008DB46F /* CoreText.framework in Frameworks */,
+				96F7C924259B822F00D2F760 /* Lightstreamer_iOS_Client in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
-				D7495F6815010A30FEC17094 /* Pods_StockList_Demo_for_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +191,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F11A367175C03EA4540F5E5 /* Pods_StockWatch_Extension.framework in Frameworks */,
+				96F7C92D259B828E00D2F760 /* Lightstreamer_watchOS_Client in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +298,6 @@
 				8CB7601B203471820099AA49 /* StockWatch Extension */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				B4C8F6422C7BFE634ADD7094 /* Pods */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -324,13 +315,9 @@
 			isa = PBXGroup;
 			children = (
 				8C660150186DB6D1008DB46F /* CoreText.framework */,
-				8C86162F1610BDBE00D6F55F /* Security.framework */,
-				8CC6A4801524C7F7003FB6C0 /* SystemConfiguration.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
-				AFBB1FE32AC448956B786F4F /* Pods_StockList_Demo_for_iOS.framework */,
-				2D4862AB2FE14DB520B71DE8 /* Pods_StockWatch_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -361,17 +348,6 @@
 			path = "StockWatch Extension";
 			sourceTree = "<group>";
 		};
-		B4C8F6422C7BFE634ADD7094 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8BB0A9F5FBADAA7C1A16DEE5 /* Pods-StockList Demo for iOS.debug.xcconfig */,
-				DE8F40CBC3C08EE3A2CF81FF /* Pods-StockList Demo for iOS.release.xcconfig */,
-				A3ACFB4BA083DA606CF69355 /* Pods-StockWatch Extension.debug.xcconfig */,
-				64E33883E0955BDC7F313397 /* Pods-StockWatch Extension.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -379,12 +355,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "StockList Demo for iOS" */;
 			buildPhases = (
-				6F4232DB91BF54CC0598A1A5 /* [CP] Check Pods Manifest.lock */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
-				007515959AE58D1D489DA7E8 /* [CP] Embed Pods Frameworks */,
 				8CB76027203471820099AA49 /* Embed Watch Content */,
+				962E84352599D0EB00B890D6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -392,6 +367,9 @@
 				8CB76026203471820099AA49 /* PBXTargetDependency */,
 			);
 			name = "StockList Demo for iOS";
+			packageProductDependencies = (
+				96F7C923259B822F00D2F760 /* Lightstreamer_iOS_Client */,
+			);
 			productName = "StockList Demo for iOS";
 			productReference = 1D6058910D05DD3D006BFB54 /* Lightstreamer StockList.app */;
 			productType = "com.apple.product-type.application";
@@ -418,17 +396,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CB7602D203471820099AA49 /* Build configuration list for PBXNativeTarget "StockWatch Extension" */;
 			buildPhases = (
-				54E01150199D444F28D7A5D6 /* [CP] Check Pods Manifest.lock */,
 				8CB76013203471820099AA49 /* Sources */,
 				8CB76014203471820099AA49 /* Frameworks */,
 				8CB76015203471820099AA49 /* Resources */,
-				9287E2AB282BD8A39AF82DD8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "StockWatch Extension";
+			packageProductDependencies = (
+				96F7C92C259B828E00D2F760 /* Lightstreamer_watchOS_Client */,
+			);
 			productName = "StockWatch Extension";
 			productReference = 8CB76017203471820099AA49 /* StockWatch Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -447,7 +426,6 @@
 					};
 					8CB7600A203471810099AA49 = {
 						CreatedOnToolsVersion = 9.2;
-						DevelopmentTeam = 7PGFJN8WH5;
 						ProvisioningStyle = Automatic;
 					};
 					8CB76016203471820099AA49 = {
@@ -469,6 +447,10 @@
 				fr,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			packageReferences = (
+				96F7C922259B822F00D2F760 /* XCRemoteSwiftPackageReference "Lightstreamer_iOS_Client" */,
+				96F7C92B259B828E00D2F760 /* XCRemoteSwiftPackageReference "Lightstreamer_watchOS_Client" */,
+			);
 			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -524,77 +506,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		007515959AE58D1D489DA7E8 /* [CP] Embed Pods Frameworks */ = {
+		962E84352599D0EB00B890D6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StockList Demo for iOS/Pods-StockList Demo for iOS-frameworks.sh",
-				"${PODS_ROOT}/Lightstreamer_iOS_Client/Lightstreamer_iOS_Client.framework",
+			inputFileListPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lightstreamer_iOS_Client.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StockList Demo for iOS/Pods-StockList Demo for iOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		54E01150199D444F28D7A5D6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-StockWatch Extension-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6F4232DB91BF54CC0598A1A5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-StockList Demo for iOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9287E2AB282BD8A39AF82DD8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StockWatch Extension/Pods-StockWatch Extension-frameworks.sh",
-				"${PODS_ROOT}/Lightstreamer_watchOS_Client/Lightstreamer_watchOS_Client.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lightstreamer_watchOS_Client.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StockWatch Extension/Pods-StockWatch Extension-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Watch/Lightstreamer_iOS_Client.framework\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -663,7 +591,6 @@
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BB0A9F5FBADAA7C1A16DEE5 /* Pods-StockList Demo for iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -671,7 +598,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 2.7.1;
+				CURRENT_PROJECT_VERSION = 2.8.1;
 				DEVELOPMENT_TEAM = 7PGFJN8WH5;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -679,8 +606,12 @@
 				GCC_PREFIX_HEADER = StockList_Demo_for_iOS_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "StockList_Demo_for_iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MARKETING_VERSION = 2.7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.8.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lightstreamer.ios.stocklist.nompn;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -689,7 +620,6 @@
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE8F40CBC3C08EE3A2CF81FF /* Pods-StockList Demo for iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -697,14 +627,18 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 2.7.1;
+				CURRENT_PROJECT_VERSION = 2.8.1;
 				DEVELOPMENT_TEAM = 7PGFJN8WH5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = StockList_Demo_for_iOS_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "StockList_Demo_for_iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MARKETING_VERSION = 2.7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.8.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lightstreamer.ios.stocklist.nompn;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -730,7 +664,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 2.7.1;
+				CURRENT_PROJECT_VERSION = 2.8.1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 7PGFJN8WH5;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -744,7 +678,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				IBSC_MODULE = StockWatch_Extension;
 				INFOPLIST_FILE = StockWatch/Info.plist;
-				MARKETING_VERSION = 2.7.1;
+				MARKETING_VERSION = 2.8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lightstreamer.ios.stocklist.nompn.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -773,7 +707,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 2.7.1;
+				CURRENT_PROJECT_VERSION = 2.8.1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 7PGFJN8WH5;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -782,7 +716,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				IBSC_MODULE = StockWatch_Extension;
 				INFOPLIST_FILE = StockWatch/Info.plist;
-				MARKETING_VERSION = 2.7.1;
+				MARKETING_VERSION = 2.8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lightstreamer.ios.stocklist.nompn.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -796,7 +730,6 @@
 		};
 		8CB7602B203471820099AA49 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3ACFB4BA083DA606CF69355 /* Pods-StockWatch Extension.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
@@ -812,7 +745,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 2.7.1;
+				CURRENT_PROJECT_VERSION = 2.8.1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 7PGFJN8WH5;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -827,8 +760,12 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "StockWatch Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MARKETING_VERSION = 2.7.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lightstreamer.ios.stocklist.nompn.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
@@ -841,7 +778,6 @@
 		};
 		8CB7602C203471820099AA49 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64E33883E0955BDC7F313397 /* Pods-StockWatch Extension.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
@@ -857,7 +793,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 2.7.1;
+				CURRENT_PROJECT_VERSION = 2.8.1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 7PGFJN8WH5;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -867,8 +803,12 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "StockWatch Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MARKETING_VERSION = 2.7.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lightstreamer.ios.stocklist.nompn.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
@@ -997,6 +937,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		96F7C922259B822F00D2F760 /* XCRemoteSwiftPackageReference "Lightstreamer_iOS_Client" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Lightstreamer/Lightstreamer_iOS_Client.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.0;
+			};
+		};
+		96F7C92B259B828E00D2F760 /* XCRemoteSwiftPackageReference "Lightstreamer_watchOS_Client" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Lightstreamer/Lightstreamer_watchOS_Client.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		96F7C923259B822F00D2F760 /* Lightstreamer_iOS_Client */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96F7C922259B822F00D2F760 /* XCRemoteSwiftPackageReference "Lightstreamer_iOS_Client" */;
+			productName = Lightstreamer_iOS_Client;
+		};
+		96F7C92C259B828E00D2F760 /* Lightstreamer_watchOS_Client */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96F7C92B259B828E00D2F760 /* XCRemoteSwiftPackageReference "Lightstreamer_watchOS_Client" */;
+			productName = Lightstreamer_watchOS_Client;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
 }

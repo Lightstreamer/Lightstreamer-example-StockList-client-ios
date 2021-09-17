@@ -7,12 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		2860E328111B887F00E27156 /* AppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E326111B887F00E27156 /* AppDelegate_iPhone.m */; };
 		2860E329111B887F00E27156 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E327111B887F00E27156 /* MainWindow_iPhone.xib */; };
-		2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E32C111B888700E27156 /* AppDelegate_iPad.m */; };
 		2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E32D111B888700E27156 /* MainWindow_iPad.xib */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		578EFEA626F46C07003207E3 /* Lightstreamer_iOS_Client in Frameworks */ = {isa = PBXBuildFile; productRef = 96F7C923259B822F00D2F760 /* Lightstreamer_iOS_Client */; };
@@ -21,17 +18,29 @@
 		578EFEAE26F4740D003207E3 /* WatchSpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEAA26F4740D003207E3 /* WatchSpecialEffects.swift */; };
 		578EFEAF26F4740D003207E3 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEAB26F4740D003207E3 /* Utils.swift */; };
 		578EFEB026F4740D003207E3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEAC26F4740D003207E3 /* InterfaceController.swift */; };
+		578EFEB226F47BCA003207E3 /* AppDelegate_iPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEB126F47BCA003207E3 /* AppDelegate_iPad.swift */; };
+		578EFEB426F47BE4003207E3 /* AppDelegate_iPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEB326F47BE4003207E3 /* AppDelegate_iPhone.swift */; };
+		578EFEC526F47CAC003207E3 /* StockListAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEB526F47CAB003207E3 /* StockListAppDelegate.swift */; };
+		578EFEC626F47CAC003207E3 /* StockListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEB626F47CAB003207E3 /* StockListViewController.swift */; };
+		578EFEC726F47CAC003207E3 /* StockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEB726F47CAB003207E3 /* StockListView.swift */; };
+		578EFEC826F47CAC003207E3 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEB826F47CAB003207E3 /* ChartView.swift */; };
+		578EFEC926F47CAC003207E3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEB926F47CAC003207E3 /* DetailView.swift */; };
+		578EFECA26F47CAC003207E3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEBA26F47CAC003207E3 /* DetailViewController.swift */; };
+		578EFECB26F47CAC003207E3 /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEBB26F47CAC003207E3 /* Connector.swift */; };
+		578EFECC26F47CAC003207E3 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEBC26F47CAC003207E3 /* InfoView.swift */; };
+		578EFECD26F47CAC003207E3 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEBD26F47CAC003207E3 /* ChartViewController.swift */; };
+		578EFECE26F47CAC003207E3 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEBE26F47CAC003207E3 /* StatusView.swift */; };
+		578EFECF26F47CAC003207E3 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEBF26F47CAC003207E3 /* StatusViewController.swift */; };
+		578EFED026F47CAC003207E3 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEC026F47CAC003207E3 /* InfoViewController.swift */; };
+		578EFED126F47CAC003207E3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEC126F47CAC003207E3 /* main.swift */; };
+		578EFED226F47CAC003207E3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEC226F47CAC003207E3 /* Constants.swift */; };
+		578EFED326F47CAC003207E3 /* StockListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEC326F47CAC003207E3 /* StockListCell.swift */; };
+		578EFED426F47CAC003207E3 /* SpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEC426F47CAC003207E3 /* SpecialEffects.swift */; };
+		578EFED526F47CC8003207E3 /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEBB26F47CAC003207E3 /* Connector.swift */; };
 		6868437AAE6C7CC6597D3629 /* StockWatch_Demo_for_watchOS_Prefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F44F71930ACC903B25E747 /* StockWatch_Demo_for_watchOS_Prefix.swift */; };
-		8C00FE641884390B009A4F34 /* Connector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C00FE631884390B009A4F34 /* Connector.m */; };
 		8C2E353D1FFD321300D6020F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2E353C1FFD321300D6020F /* Media.xcassets */; };
-		8C2F040F1869D90500012B38 /* SpecialEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F040E1869D90500012B38 /* SpecialEffects.m */; };
-		8C66014C186D90D7008DB46F /* ChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C66014B186D90D7008DB46F /* ChartView.m */; };
-		8C66014F186D90F0008DB46F /* ChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C66014E186D90F0008DB46F /* ChartViewController.m */; };
 		8C660151186DB6D1008DB46F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C660150186DB6D1008DB46F /* CoreText.framework */; };
-		8C7518E41875BBA700CB61D5 /* UIAlertView+BlockExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7518E31875BBA700CB61D5 /* UIAlertView+BlockExtensions.m */; };
 		8C7815011FFBEC9200DEB287 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C7815001FFBEC9200DEB287 /* LaunchScreen.xib */; };
-		8C7A1A3012E4AF770019C2A7 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7A1A2F12E4AF770019C2A7 /* InfoViewController.m */; };
-		8C7A1A3612E4AF8D0019C2A7 /* InfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7A1A3512E4AF8D0019C2A7 /* InfoView.m */; };
 		8CA3C25D17C3A747005598B5 /* StockListSection_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C25C17C3A747005598B5 /* StockListSection_iPhone.xib */; };
 		8CA3C25F17C3A77F005598B5 /* InfoView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C25E17C3A77F005598B5 /* InfoView_iPhone.xib */; };
 		8CA3C26117C3A78C005598B5 /* StatusView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C26017C3A78C005598B5 /* StatusView_iPhone.xib */; };
@@ -42,21 +51,13 @@
 		8CB76018203471820099AA49 /* StockWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8CB76017203471820099AA49 /* StockWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8CB76023203471820099AA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CB76022203471820099AA49 /* Assets.xcassets */; };
 		8CB76028203471820099AA49 /* StockWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8CB7600B203471810099AA49 /* StockWatch.app */; };
-		8CB76034203477F60099AA49 /* Connector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C00FE631884390B009A4F34 /* Connector.m */; };
 		8CD113AD12A01DFC0047C173 /* StockListView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD113AC12A01DFC0047C173 /* StockListView_iPad.xib */; };
 		8CD113B012A01E600047C173 /* StockListView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD113AF12A01E600047C173 /* StockListView_iPhone.xib */; };
-		8CD113B412A01EEE0047C173 /* StockListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD113B312A01EEE0047C173 /* StockListViewController.m */; };
-		8CD113B712A01F0D0047C173 /* StockListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD113B612A01F0D0047C173 /* StockListView.m */; };
 		8CD113CA12A021DD0047C173 /* StockListCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD113C912A021DD0047C173 /* StockListCell_iPad.xib */; };
 		8CD113CD12A023640047C173 /* StockListSection_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD113CC12A023640047C173 /* StockListSection_iPad.xib */; };
 		8CD113D012A025F90047C173 /* StockListCell_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD113CF12A025F90047C173 /* StockListCell_iPhone.xib */; };
-		8CD1140F12A02B8F0047C173 /* StockListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD1140E12A02B8F0047C173 /* StockListCell.m */; };
 		8CD8D58118688B910021E803 /* DetailView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD8D58018688B910021E803 /* DetailView_iPad.xib */; };
-		8CD8D58418688CC40021E803 /* DetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD8D58318688CC40021E803 /* DetailView.m */; };
-		8CD8D58718688CDA0021E803 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD8D58618688CDA0021E803 /* DetailViewController.m */; };
 		8CD8D589186894DC0021E803 /* DetailView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD8D588186894DC0021E803 /* DetailView_iPhone.xib */; };
-		8CED185F132FD30100F92DFE /* StatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CED185E132FD2FF00F92DFE /* StatusViewController.m */; };
-		8CED1862132FD32900F92DFE /* StatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CED1861132FD32500F92DFE /* StatusView.m */; };
 		B4924DB69ADB9A8828DFB9A9 /* StockList_Demo_for_iOS_Prefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585D4095ADE52EC38056F91B /* StockList_Demo_for_iOS_Prefix.swift */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +123,24 @@
 		578EFEAA26F4740D003207E3 /* WatchSpecialEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSpecialEffects.swift; sourceTree = "<group>"; };
 		578EFEAB26F4740D003207E3 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		578EFEAC26F4740D003207E3 /* InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		578EFEB126F47BCA003207E3 /* AppDelegate_iPad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate_iPad.swift; sourceTree = "<group>"; };
+		578EFEB326F47BE4003207E3 /* AppDelegate_iPhone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate_iPhone.swift; sourceTree = "<group>"; };
+		578EFEB526F47CAB003207E3 /* StockListAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StockListAppDelegate.swift; path = Shared/StockListAppDelegate.swift; sourceTree = "<group>"; };
+		578EFEB626F47CAB003207E3 /* StockListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StockListViewController.swift; path = Shared/StockListViewController.swift; sourceTree = "<group>"; };
+		578EFEB726F47CAB003207E3 /* StockListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StockListView.swift; path = Shared/StockListView.swift; sourceTree = "<group>"; };
+		578EFEB826F47CAB003207E3 /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChartView.swift; path = Shared/ChartView.swift; sourceTree = "<group>"; };
+		578EFEB926F47CAC003207E3 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailView.swift; path = Shared/DetailView.swift; sourceTree = "<group>"; };
+		578EFEBA26F47CAC003207E3 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = Shared/DetailViewController.swift; sourceTree = "<group>"; };
+		578EFEBB26F47CAC003207E3 /* Connector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Connector.swift; path = Shared/Connector.swift; sourceTree = "<group>"; };
+		578EFEBC26F47CAC003207E3 /* InfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoView.swift; path = Shared/InfoView.swift; sourceTree = "<group>"; };
+		578EFEBD26F47CAC003207E3 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChartViewController.swift; path = Shared/ChartViewController.swift; sourceTree = "<group>"; };
+		578EFEBE26F47CAC003207E3 /* StatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatusView.swift; path = Shared/StatusView.swift; sourceTree = "<group>"; };
+		578EFEBF26F47CAC003207E3 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatusViewController.swift; path = Shared/StatusViewController.swift; sourceTree = "<group>"; };
+		578EFEC026F47CAC003207E3 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoViewController.swift; path = Shared/InfoViewController.swift; sourceTree = "<group>"; };
+		578EFEC126F47CAC003207E3 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = Shared/main.swift; sourceTree = "<group>"; };
+		578EFEC226F47CAC003207E3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Shared/Constants.swift; sourceTree = "<group>"; };
+		578EFEC326F47CAC003207E3 /* StockListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StockListCell.swift; path = Shared/StockListCell.swift; sourceTree = "<group>"; };
+		578EFEC426F47CAC003207E3 /* SpecialEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpecialEffects.swift; path = Shared/SpecialEffects.swift; sourceTree = "<group>"; };
 		585D4095ADE52EC38056F91B /* StockList_Demo_for_iOS_Prefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockList_Demo_for_iOS_Prefix.swift; sourceTree = "<group>"; };
 		8C00FE621884390B009A4F34 /* Connector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Connector.h; path = Shared/Connector.h; sourceTree = "<group>"; };
 		8C00FE631884390B009A4F34 /* Connector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Connector.m; path = Shared/Connector.m; sourceTree = "<group>"; };
@@ -230,6 +249,7 @@
 		2860E324111B887F00E27156 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				578EFEB326F47BE4003207E3 /* AppDelegate_iPhone.swift */,
 				2860E325111B887F00E27156 /* AppDelegate_iPhone.h */,
 				2860E326111B887F00E27156 /* AppDelegate_iPhone.m */,
 				2860E327111B887F00E27156 /* MainWindow_iPhone.xib */,
@@ -246,6 +266,7 @@
 		2860E32A111B888700E27156 /* iPad */ = {
 			isa = PBXGroup;
 			children = (
+				578EFEB126F47BCA003207E3 /* AppDelegate_iPad.swift */,
 				2860E32B111B888700E27156 /* AppDelegate_iPad.h */,
 				2860E32C111B888700E27156 /* AppDelegate_iPad.m */,
 				2860E32D111B888700E27156 /* MainWindow_iPad.xib */,
@@ -262,6 +283,22 @@
 		28EEBF621118D79A00187D67 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				578EFEB826F47CAB003207E3 /* ChartView.swift */,
+				578EFEBD26F47CAC003207E3 /* ChartViewController.swift */,
+				578EFEBB26F47CAC003207E3 /* Connector.swift */,
+				578EFEC226F47CAC003207E3 /* Constants.swift */,
+				578EFEB926F47CAC003207E3 /* DetailView.swift */,
+				578EFEBA26F47CAC003207E3 /* DetailViewController.swift */,
+				578EFEBC26F47CAC003207E3 /* InfoView.swift */,
+				578EFEC026F47CAC003207E3 /* InfoViewController.swift */,
+				578EFEC126F47CAC003207E3 /* main.swift */,
+				578EFEC426F47CAC003207E3 /* SpecialEffects.swift */,
+				578EFEBE26F47CAC003207E3 /* StatusView.swift */,
+				578EFEBF26F47CAC003207E3 /* StatusViewController.swift */,
+				578EFEB526F47CAB003207E3 /* StockListAppDelegate.swift */,
+				578EFEC326F47CAC003207E3 /* StockListCell.swift */,
+				578EFEB726F47CAB003207E3 /* StockListView.swift */,
+				578EFEB626F47CAB003207E3 /* StockListViewController.swift */,
 				8C7518E018757A2700CB61D5 /* StockListAppDelegate.h */,
 				8CD113B212A01EEE0047C173 /* StockListViewController.h */,
 				8CD113B312A01EEE0047C173 /* StockListViewController.m */,
@@ -552,24 +589,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				2860E328111B887F00E27156 /* AppDelegate_iPhone.m in Sources */,
-				2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */,
-				8C66014C186D90D7008DB46F /* ChartView.m in Sources */,
-				8CD113B412A01EEE0047C173 /* StockListViewController.m in Sources */,
-				8CD113B712A01F0D0047C173 /* StockListView.m in Sources */,
-				8CD1140F12A02B8F0047C173 /* StockListCell.m in Sources */,
-				8C00FE641884390B009A4F34 /* Connector.m in Sources */,
-				8C2F040F1869D90500012B38 /* SpecialEffects.m in Sources */,
-				8C7A1A3012E4AF770019C2A7 /* InfoViewController.m in Sources */,
-				8C7A1A3612E4AF8D0019C2A7 /* InfoView.m in Sources */,
-				8C66014F186D90F0008DB46F /* ChartViewController.m in Sources */,
-				8CED185F132FD30100F92DFE /* StatusViewController.m in Sources */,
-				8CD8D58418688CC40021E803 /* DetailView.m in Sources */,
-				8CED1862132FD32900F92DFE /* StatusView.m in Sources */,
-				8CD8D58718688CDA0021E803 /* DetailViewController.m in Sources */,
-				8C7518E41875BBA700CB61D5 /* UIAlertView+BlockExtensions.m in Sources */,
+				578EFECF26F47CAC003207E3 /* StatusViewController.swift in Sources */,
+				578EFED226F47CAC003207E3 /* Constants.swift in Sources */,
+				578EFECA26F47CAC003207E3 /* DetailViewController.swift in Sources */,
+				578EFECE26F47CAC003207E3 /* StatusView.swift in Sources */,
+				578EFECC26F47CAC003207E3 /* InfoView.swift in Sources */,
+				578EFED026F47CAC003207E3 /* InfoViewController.swift in Sources */,
+				578EFEB426F47BE4003207E3 /* AppDelegate_iPhone.swift in Sources */,
+				578EFEC926F47CAC003207E3 /* DetailView.swift in Sources */,
+				578EFECB26F47CAC003207E3 /* Connector.swift in Sources */,
+				578EFECD26F47CAC003207E3 /* ChartViewController.swift in Sources */,
+				578EFEC526F47CAC003207E3 /* StockListAppDelegate.swift in Sources */,
+				578EFED126F47CAC003207E3 /* main.swift in Sources */,
+				578EFED326F47CAC003207E3 /* StockListCell.swift in Sources */,
+				578EFEB226F47BCA003207E3 /* AppDelegate_iPad.swift in Sources */,
+				578EFEC826F47CAC003207E3 /* ChartView.swift in Sources */,
+				578EFEC726F47CAC003207E3 /* StockListView.swift in Sources */,
+				578EFED426F47CAC003207E3 /* SpecialEffects.swift in Sources */,
 				B4924DB69ADB9A8828DFB9A9 /* StockList_Demo_for_iOS_Prefix.swift in Sources */,
+				578EFEC626F47CAC003207E3 /* StockListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,8 +617,8 @@
 			files = (
 				578EFEAF26F4740D003207E3 /* Utils.swift in Sources */,
 				578EFEAE26F4740D003207E3 /* WatchSpecialEffects.swift in Sources */,
-				8CB76034203477F60099AA49 /* Connector.m in Sources */,
 				578EFEB026F4740D003207E3 /* InterfaceController.swift in Sources */,
+				578EFED526F47CC8003207E3 /* Connector.swift in Sources */,
 				6868437AAE6C7CC6597D3629 /* StockWatch_Demo_for_watchOS_Prefix.swift in Sources */,
 				578EFEAD26F4740D003207E3 /* ExtensionDelegate.swift in Sources */,
 			);

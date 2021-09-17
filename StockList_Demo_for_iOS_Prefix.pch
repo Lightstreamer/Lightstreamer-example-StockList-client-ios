@@ -3,9 +3,6 @@
 //
 
 #ifdef __OBJC__
-    // Added by Swiftify: import the Swift Bridging Header from the .pch file
-    // to make it accessible from all Objective-C source files.
-    #import "Lightstreamer_StockList-Swift.h"
     #import <Foundation/Foundation.h>
     #import <UIKit/UIKit.h>
 	#import <Lightstreamer_iOS_Client/Lightstreamer_iOS_Client.h>

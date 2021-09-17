@@ -110,7 +110,6 @@
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		578EFEA926F4740D003207E3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		578EFEAA26F4740D003207E3 /* WatchSpecialEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSpecialEffects.swift; sourceTree = "<group>"; };
-		578EFEAB26F4740D003207E3 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		578EFEAC26F4740D003207E3 /* InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		578EFEB126F47BCA003207E3 /* AppDelegate_iPad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate_iPad.swift; sourceTree = "<group>"; };
 		578EFEB326F47BE4003207E3 /* AppDelegate_iPhone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate_iPhone.swift; sourceTree = "<group>"; };
@@ -302,7 +301,6 @@
 			children = (
 				578EFEA926F4740D003207E3 /* ExtensionDelegate.swift */,
 				578EFEAC26F4740D003207E3 /* InterfaceController.swift */,
-				578EFEAB26F4740D003207E3 /* Utils.swift */,
 				578EFEAA26F4740D003207E3 /* WatchSpecialEffects.swift */,
 				8CB76022203471820099AA49 /* Assets.xcassets */,
 				8CB76024203471820099AA49 /* Info.plist */,

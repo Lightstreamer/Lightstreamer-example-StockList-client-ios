@@ -70,8 +70,8 @@ class Connector: NSObject, ClientDelegate {
         // On watchOS connections are extremely slow (for no apparent reason),
         // so we raise the timeout and force the HTTP streaming transport,
         // to reduce the number of connections required
-        client?.connectionOptions.retryDelay = 15_000
-        client?.connectionOptions.forcedTransport = "HTTP-STREAMING"
+        client.connectionOptions.retryDelay = 15_000
+        client.connectionOptions.forcedTransport = .HTTP_STREAMING
         
         #endif
     }

@@ -17,9 +17,9 @@
 // • Add `@class MySwiftClass` to your .h files that depend on the Swift code;
 // • No need to import the Swift Bridging Header (`StockList_Demo_for_iOS-Swift.h`), since it's already being imported from the .pch file.
 
-#import <Foundation/Foundation.h>
-#import <Lightstreamer_iOS_Client/Lightstreamer_iOS_Client.h>
-#import <UIKit/UIKit.h>
+//#import <Foundation/Foundation.h>
+//#import <Lightstreamer_iOS_Client/Lightstreamer_iOS_Client.h>
+//#import <UIKit/UIKit.h>
 
 // End Swiftify generated imports
 // -----------------------------------------------------------------------------

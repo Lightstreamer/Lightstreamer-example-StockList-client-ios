@@ -20,11 +20,11 @@
 
 import Foundation
 import WatchKit
-import Lightstreamer_watchOS_Client
+import LightstreamerClient
 
-class InterfaceController: WKInterfaceController, LSSubscriptionDelegate {
+class InterfaceController: WKInterfaceController, SubscriptionDelegate {
     private var subscribed = false
-    private var subscription: LSSubscription?
+    private var subscription: Subscription?
     private var selectedItem = 0
     private var itemUpdated: [Int : [String:Bool]]?
     private var itemData: [Int : [String:String?]]?
@@ -61,8 +61,8 @@ class InterfaceController: WKInterfaceController, LSSubscriptionDelegate {
 
         // We use the notification center to know when the
         // connection changes status
-        NotificationCenter.default.addObserver(self, selector: #selector(connectionStatusChanged), name: NSNotification.Name(NOTIFICATION_CONN_STATUS), object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(connectionEnded), name: NSNotification.Name(NOTIFICATION_CONN_ENDED), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(connectionStatusChanged), name: NOTIFICATION_CONN_STATUS, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(connectionEnded), name: NOTIFICATION_CONN_ENDED, object: nil)
 
         // Fill the picker
         updatePicker()
@@ -100,19 +100,19 @@ class InterfaceController: WKInterfaceController, LSSubscriptionDelegate {
         // This method is always called from a background thread
 
         // Check if we need to subscribe
-        let needsSubscription = !subscribed && Connector.shared().isConnected
+        let needsSubscription = !subscribed && Connector.shared().connected
         if needsSubscription {
             subscribed = true
 
             print("InterfaceController: subscribing table...")
 
             // The LSLightstreamerClient will reconnect and resubscribe automatically
-            subscription = LSSubscription(subscriptionMode: "MERGE", items: TABLE_ITEMS, fields: DETAIL_FIELDS)
+            subscription = Subscription(subscriptionMode: .MERGE, items: TABLE_ITEMS, fields: DETAIL_FIELDS)
             subscription?.dataAdapter = DATA_ADAPTER
-            subscription?.requestedSnapshot = "yes"
+            subscription?.requestedSnapshot = .yes
             subscription?.addDelegate(self)
 
-            Connector.shared().subscribe(subscription)
+            Connector.shared().subscribe(subscription!)
         }
     }
 
@@ -129,9 +129,21 @@ class InterfaceController: WKInterfaceController, LSSubscriptionDelegate {
     }
 
     // MARK: -
-    // MARK: Methods of LSSubscriptionDelegate
+    // MARK: Methods of SubscriptionDelegate
+    
+    func subscription(_ subscription: Subscription, didClearSnapshotForItemName itemName: String?, itemPos: UInt) {}
+    func subscription(_ subscription: Subscription, didLoseUpdates lostUpdates: UInt, forCommandSecondLevelItemWithKey key: String) {}
+    func subscription(_ subscription: Subscription, didFailWithErrorCode code: Int, message: String?, forCommandSecondLevelItemWithKey key: String) {}
+    func subscription(_ subscription: Subscription, didEndSnapshotForItemName itemName: String?, itemPos: UInt) {}
+    func subscription(_ subscription: Subscription, didLoseUpdates lostUpdates: UInt, forItemName itemName: String?, itemPos: UInt) {}
+    func subscriptionDidRemoveDelegate(_ subscription: Subscription) {}
+    func subscriptionDidAddDelegate(_ subscription: Subscription) {}
+    func subscriptionDidSubscribe(_ subscription: Subscription) {}
+    func subscription(_ subscription: Subscription, didFailWithErrorCode code: Int, message: String?) {}
+    func subscriptionDidUnsubscribe(_ subscription: Subscription) {}
+    func subscription(_ subscription: Subscription, didReceiveRealFrequency frequency: RealMaxFrequency?) {}
 
-    func subscription(_ subscription: LSSubscription, didUpdateItem itemUpdate: LSItemUpdate) {
+    func subscription(_ subscription: Subscription, didUpdateItem itemUpdate: ItemUpdate) {
         // This method is always called from a background thread
 
         let itemPosition = Int(itemUpdate.itemPos)

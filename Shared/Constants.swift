@@ -20,23 +20,25 @@
 
 import UIKit
 
-/* Configuration for local installation
-let PUSH_SERVER_URL = "http://localhost:8080/"
-let ADAPTER_SET = "STOCKLISTDEMO"
-let DATA_ADAPTER = "STOCKLIST_ADAPTER"
-*/
+// Configuration for local installation
+//let PUSH_SERVER_URL = "http://localhost:8080/"
+//let ADAPTER_SET = "STOCKLISTDEMO"
+//let DATA_ADAPTER = "STOCKLIST_ADAPTER"
+
 // Configuration for online demo server
 //let PUSH_SERVER_URL = "http://192.168.43.35:8080"
 let PUSH_SERVER_URL = "https://push.lightstreamer.com"
 let ADAPTER_SET = "DEMO"
 let DATA_ADAPTER = "QUOTE_ADAPTER"
-//
 
+
+#if os(iOS)
 let DEVICE_IPAD = UIDevice.current.userInterfaceIdiom == .pad
 
 func DEVICE_XIB(_ xib: String) -> String {
     DEVICE_IPAD ? xib + "_iPad" : xib + "_iPhone"
 }
+#endif
 
 let NUMBER_OF_ITEMS = 30
 let NUMBER_OF_LIST_FIELDS = 4

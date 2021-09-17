@@ -12,11 +12,8 @@
 		2860E329111B887F00E27156 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E327111B887F00E27156 /* MainWindow_iPhone.xib */; };
 		2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E32D111B888700E27156 /* MainWindow_iPad.xib */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
-		578EFEA626F46C07003207E3 /* Lightstreamer_iOS_Client in Frameworks */ = {isa = PBXBuildFile; productRef = 96F7C923259B822F00D2F760 /* Lightstreamer_iOS_Client */; };
-		578EFEA726F46C07003207E3 /* Lightstreamer_watchOS_Client in Frameworks */ = {isa = PBXBuildFile; productRef = 96F7C92C259B828E00D2F760 /* Lightstreamer_watchOS_Client */; };
 		578EFEAD26F4740D003207E3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEA926F4740D003207E3 /* ExtensionDelegate.swift */; };
 		578EFEAE26F4740D003207E3 /* WatchSpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEAA26F4740D003207E3 /* WatchSpecialEffects.swift */; };
-		578EFEAF26F4740D003207E3 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEAB26F4740D003207E3 /* Utils.swift */; };
 		578EFEB026F4740D003207E3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEAC26F4740D003207E3 /* InterfaceController.swift */; };
 		578EFEB226F47BCA003207E3 /* AppDelegate_iPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEB126F47BCA003207E3 /* AppDelegate_iPad.swift */; };
 		578EFEB426F47BE4003207E3 /* AppDelegate_iPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEB326F47BE4003207E3 /* AppDelegate_iPhone.swift */; };
@@ -37,6 +34,9 @@
 		578EFED326F47CAC003207E3 /* StockListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEC326F47CAC003207E3 /* StockListCell.swift */; };
 		578EFED426F47CAC003207E3 /* SpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEC426F47CAC003207E3 /* SpecialEffects.swift */; };
 		578EFED526F47CC8003207E3 /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEBB26F47CAC003207E3 /* Connector.swift */; };
+		578EFED826F47F08003207E3 /* LightstreamerClient in Frameworks */ = {isa = PBXBuildFile; productRef = 578EFED726F47F08003207E3 /* LightstreamerClient */; };
+		578EFEDA26F47F14003207E3 /* LightstreamerClient in Frameworks */ = {isa = PBXBuildFile; productRef = 578EFED926F47F14003207E3 /* LightstreamerClient */; };
+		578EFEDB26F481D3003207E3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEC226F47CAC003207E3 /* Constants.swift */; };
 		6868437AAE6C7CC6597D3629 /* StockWatch_Demo_for_watchOS_Prefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F44F71930ACC903B25E747 /* StockWatch_Demo_for_watchOS_Prefix.swift */; };
 		8C2E353D1FFD321300D6020F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2E353C1FFD321300D6020F /* Media.xcassets */; };
 		8C660151186DB6D1008DB46F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C660150186DB6D1008DB46F /* CoreText.framework */; };
@@ -141,6 +141,7 @@
 		578EFEC226F47CAC003207E3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Shared/Constants.swift; sourceTree = "<group>"; };
 		578EFEC326F47CAC003207E3 /* StockListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StockListCell.swift; path = Shared/StockListCell.swift; sourceTree = "<group>"; };
 		578EFEC426F47CAC003207E3 /* SpecialEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpecialEffects.swift; path = Shared/SpecialEffects.swift; sourceTree = "<group>"; };
+		578EFED626F47EEA003207E3 /* LightstreamerClient */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LightstreamerClient; path = ../LightstreamerClient; sourceTree = "<group>"; };
 		585D4095ADE52EC38056F91B /* StockList_Demo_for_iOS_Prefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockList_Demo_for_iOS_Prefix.swift; sourceTree = "<group>"; };
 		8C00FE621884390B009A4F34 /* Connector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Connector.h; path = Shared/Connector.h; sourceTree = "<group>"; };
 		8C00FE631884390B009A4F34 /* Connector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Connector.m; path = Shared/Connector.m; sourceTree = "<group>"; };
@@ -211,9 +212,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C660151186DB6D1008DB46F /* CoreText.framework in Frameworks */,
-				578EFEA626F46C07003207E3 /* Lightstreamer_iOS_Client in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				578EFED826F47F08003207E3 /* LightstreamerClient in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,7 +223,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				578EFEA726F46C07003207E3 /* Lightstreamer_watchOS_Client in Frameworks */,
+				578EFEDA26F47F14003207E3 /* LightstreamerClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +340,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				578EFED626F47EEA003207E3 /* LightstreamerClient */,
 				578EFEA826F46F5B003207E3 /* StockWatch_Demo_for_watchOS-Bridging-Header.h */,
 				2860E32A111B888700E27156 /* iPad */,
 				2860E324111B887F00E27156 /* iPhone */,
@@ -426,7 +428,7 @@
 			);
 			name = "StockList Demo for iOS";
 			packageProductDependencies = (
-				96F7C923259B822F00D2F760 /* Lightstreamer_iOS_Client */,
+				578EFED726F47F08003207E3 /* LightstreamerClient */,
 			);
 			productName = "StockList Demo for iOS";
 			productReference = 1D6058910D05DD3D006BFB54 /* Lightstreamer StockList.app */;
@@ -464,7 +466,7 @@
 			);
 			name = "StockWatch Extension";
 			packageProductDependencies = (
-				96F7C92C259B828E00D2F760 /* Lightstreamer_watchOS_Client */,
+				578EFED926F47F14003207E3 /* LightstreamerClient */,
 			);
 			productName = "StockWatch Extension";
 			productReference = 8CB76017203471820099AA49 /* StockWatch Extension.appex */;
@@ -506,8 +508,6 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			packageReferences = (
-				96F7C922259B822F00D2F760 /* XCRemoteSwiftPackageReference "Lightstreamer_iOS_Client" */,
-				96F7C92B259B828E00D2F760 /* XCRemoteSwiftPackageReference "Lightstreamer_watchOS_Client" */,
 			);
 			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
 			projectDirPath = "";
@@ -615,12 +615,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				578EFEAF26F4740D003207E3 /* Utils.swift in Sources */,
 				578EFEAE26F4740D003207E3 /* WatchSpecialEffects.swift in Sources */,
 				578EFEB026F4740D003207E3 /* InterfaceController.swift in Sources */,
 				578EFED526F47CC8003207E3 /* Connector.swift in Sources */,
 				6868437AAE6C7CC6597D3629 /* StockWatch_Demo_for_watchOS_Prefix.swift in Sources */,
 				578EFEAD26F4740D003207E3 /* ExtensionDelegate.swift in Sources */,
+				578EFEDB26F481D3003207E3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,7 +669,7 @@
 				GCC_PREFIX_HEADER = StockList_Demo_for_iOS_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "StockList_Demo_for_iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -700,7 +700,7 @@
 				GCC_PREFIX_HEADER = StockList_Demo_for_iOS_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "StockList_Demo_for_iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -865,7 +865,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
 			};
 			name = Debug;
 		};
@@ -911,7 +911,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
 			};
 			name = Release;
 		};
@@ -1033,35 +1033,14 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		96F7C922259B822F00D2F760 /* XCRemoteSwiftPackageReference "Lightstreamer_iOS_Client" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Lightstreamer/Lightstreamer_iOS_Client.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.3.0;
-			};
-		};
-		96F7C92B259B828E00D2F760 /* XCRemoteSwiftPackageReference "Lightstreamer_watchOS_Client" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Lightstreamer/Lightstreamer_watchOS_Client.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.3.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		96F7C923259B822F00D2F760 /* Lightstreamer_iOS_Client */ = {
+		578EFED726F47F08003207E3 /* LightstreamerClient */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 96F7C922259B822F00D2F760 /* XCRemoteSwiftPackageReference "Lightstreamer_iOS_Client" */;
-			productName = Lightstreamer_iOS_Client;
+			productName = LightstreamerClient;
 		};
-		96F7C92C259B828E00D2F760 /* Lightstreamer_watchOS_Client */ = {
+		578EFED926F47F14003207E3 /* LightstreamerClient */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 96F7C92B259B828E00D2F760 /* XCRemoteSwiftPackageReference "Lightstreamer_watchOS_Client" */;
-			productName = Lightstreamer_watchOS_Client;
+			productName = LightstreamerClient;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

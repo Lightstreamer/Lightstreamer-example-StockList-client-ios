@@ -6,6 +6,6 @@
 //  Copyright © 2021 Weswit srl. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <Lightstreamer_watchOS_Client/Lightstreamer_watchOS_Client.h>
-#import "Connector.h"
+//#import <Foundation/Foundation.h>
+//#import <Lightstreamer_watchOS_Client/Lightstreamer_watchOS_Client.h>
+//#import "Connector.h"

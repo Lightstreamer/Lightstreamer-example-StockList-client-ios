@@ -18,15 +18,15 @@
  */
 
 // Configuration for local installation
-#define PUSH_SERVER_URL            (@"http://localhost:8080/")
-#define ADAPTER_SET                (@"STOCKLISTDEMO")
-#define DATA_ADAPTER               (@"STOCKLIST_ADAPTER")
+//#define PUSH_SERVER_URL            (@"http://localhost:8080/")
+//#define ADAPTER_SET                (@"STOCKLISTDEMO")
+//#define DATA_ADAPTER               (@"STOCKLIST_ADAPTER")
 
-/* Configuration for online demo server
+// Configuration for online demo server
 #define PUSH_SERVER_URL            (@"https://push.lightstreamer.com")
 #define ADAPTER_SET                (@"DEMO")
 #define DATA_ADAPTER               (@"QUOTE_ADAPTER")
- */
+ 
 
 #define NUMBER_OF_ITEMS            (30)
 #define NUMBER_OF_LIST_FIELDS      (4)

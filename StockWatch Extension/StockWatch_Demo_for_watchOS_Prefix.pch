@@ -24,3 +24,9 @@
 
 #endif /* StockWatch_Demo_for_watchOS_Prefix_pch */
 
+
+#ifdef __OBJC__
+    // Added by Swiftify: import the Swift Bridging Header from the .pch file
+    // to make it accessible from all Objective-C source files.
+    #import "StockWatch_Extension-Swift.h"
+#endif

@@ -1,5 +1,6 @@
+//  Converted to Swift 5.4 by Swiftify v5.4.24488 - https://swiftify.com/
 //
-//  SpecialEffects.h
+//  StatusView.swift
 //  StockList Demo for iOS
 //
 // Copyright (c) Lightstreamer Srl
@@ -17,17 +18,14 @@
 // limitations under the License.
 //
 
-#import <UIKit/UIKit.h>
+import UIKit
 
+class StatusView: UIView {
+    // MARK: -
+    // MARK: Initialization
 
-@interface SpecialEffects : NSObject
-
-
-#pragma mark -
-#pragma mark UI element flashing
-
-+ (void) flashLabel:(UILabel *)label withColor:(UIColor *)color;
-+ (void) flashImage:(UIImageView *)imageView withColor:(UIColor *)color;
-
-
-@end
+    required init?(coder decoder: NSCoder) {
+        super.init(coder: decoder)
+            // Nothing to do, actually
+    }
+}

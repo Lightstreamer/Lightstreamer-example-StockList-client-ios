@@ -2,7 +2,7 @@
 
 <!-- START DESCRIPTION lightstreamer-example-stocklist-client-ios -->
 
-This project contains an example of an application for iPhone and iPad that employs the [Lightstreamer iOS Client library](http://www.lightstreamer.com/api/ls-ios-client/latest/). The application also includes a WatchKit extension that employs the [Lightstreamer watchOS Client library](https://www.lightstreamer.com/api/ls-watchos-client/latest/).
+This project contains an example of an application for iPhone and iPad that employs the [Lightstreamer Swift Client library](http://www.lightstreamer.com/api/ls-swift-client/latest/). The application also includes a WatchKit extension.
 
 A version with full support for mobile push notifications (MPN) is also available: [Lightstreamer - Stock-List Demo with APNs Push Notifications - iOS Client](https://github.com/Lightstreamer/Lightstreamer-example-MPNStockList-client-ios).
 
@@ -13,9 +13,9 @@ A version with full support for mobile push notifications (MPN) is also availabl
 
 ## Details
 
-This app, compatible with both iPhone and iPad, is an Objective-C version of the [Stock-List Demos](https://github.com/Lightstreamer/Lightstreamer-example-Stocklist-client-javascript).<br>
+This app, compatible with both iPhone and iPad, is an Swift version of the [Stock-List Demos](https://github.com/Lightstreamer/Lightstreamer-example-Stocklist-client-javascript).<br>
 
-This app uses the <b>iOS and watchOS Client APIs for Lightstreamer</b> to handle the communications with Lightstreamer Server. A simple user interface is implemented to display the real-time data received from Lightstreamer Server.<br>
+This app uses the <b>Swift Client API for Lightstreamer</b> to handle the communications with Lightstreamer Server. A simple user interface is implemented to display the real-time data received from Lightstreamer Server.<br>
 
 ## Install
 
@@ -30,7 +30,7 @@ A full Xcode project, ready for compilation of the app sources, is provided. Ple
 * Create an *app ID* on the [Apple Developer Center](https://developer.apple.com/membercenter/index.action).
 * Create and install an appropriate provisioning profile for the app ID above and your test device, on the Apple Developer Center.
 * Set the app ID above as the *Bundle Identifier* of the Xcode project of the app.
-* Set the IP address of your local Lightstreamer Server in the constant `PUSH_SERVER_URL`, defined in `Shared/Constants.h`; a ":port" part can also be added.
+* Set the IP address of your local Lightstreamer Server in the constant `PUSH_SERVER_URL`, defined in `Shared/Constants.swift`; a ":port" part can also be added.
 * Follow the installation instructions for the Data and Metadata adapters required by the demo, detailed in the [Lightstreamer - Stock-List Demo - Java Adapter](https://github.com/Lightstreamer/Lightstreamer-example-StockList-adapter-java) project.
 
 Done this, the app should run correctly on your test device and connect to your server.
@@ -52,7 +52,7 @@ Done this, the app should run correctly on your test device and connect to your 
 
 ## Lightstreamer Compatibility Notes
 
-* Code compatible with Lightstreamer iOS and watchOS Client Libraries version 4.0.0 or newer.
-* Build instructions compatible with Lightstreamer iOS and watchOS Client SDKs version 4.3.0 or newer.
+* Code compatible with Lightstreamer Swift Client Library version 5.0.0 or newer.
+* Build instructions compatible with Lightstreamer Swift Client SDK version 5.0.0 or newer.
 * For Lightstreamer Server version 7.0 or greater. Ensure that iOS and/or watchOS Client SDK is supported by Lightstreamer Server license configuration, depending on where the demo will be run.
-* For a version of this example compatible with Lightstreamer iOS and watchOS Client SDKs versions up to 4.2.1, please refer to [this tag](https://github.com/Lightstreamer/Lightstreamer-example-StockList-client-ios/tree/latest-for-cocoapods).
+* For a version of this example compatible with Lightstreamer iOS and watchOS Client SDKs versions up to 4, please refer to [this tag](https://github.com/Lightstreamer/Lightstreamer-example-StockList-client-ios/tree/latest-for-client-4.x).

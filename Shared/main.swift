@@ -1,5 +1,5 @@
 //
-//  InfoView.h
+//  main.m
 //  StockList Demo for iOS
 //
 // Copyright (c) Lightstreamer Srl
@@ -17,20 +17,6 @@
 // limitations under the License.
 //
 
-#import <UIKit/UIKit.h>
+import UIKit
 
-
-@interface InfoView : UIView {
-	IBOutlet __weak UIImageView *_logoImage;
-	IBOutlet __weak UIButton *_readButton;
-}
-
-
-#pragma mark -
-#pragma mark Properties
-
-@property (weak, nonatomic, readonly) UIImageView *logoImage;
-@property (weak, nonatomic, readonly) UIButton *readButton;
-
-
-@end
+UIApplicationMain(CommandLine.argc, CommandLine.unsafeArgv, nil, nil)

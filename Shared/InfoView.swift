@@ -1,6 +1,7 @@
+//  Converted to Swift 5.4 by Swiftify v5.4.24488 - https://swiftify.com/
 //
-//  StockWatch_Demo_for_watchOS_Prefix.pch
-//  StockWatch Extension
+//  InfoView.swift
+//  StockList Demo for iOS
 //
 // Copyright (c) Lightstreamer Srl
 //
@@ -17,10 +18,22 @@
 // limitations under the License.
 //
 
-#ifndef StockWatch_Demo_for_watchOS_Prefix_pch
-#define StockWatch_Demo_for_watchOS_Prefix_pch
+import UIKit
 
-#import <Lightstreamer_watchOS_Client/Lightstreamer_watchOS_Client.h>
+class InfoView: UIView {
+    // MARK: -
+    // MARK: Properties
+    @IBOutlet private(set) weak var logoImage: UIImageView?
+    @IBOutlet private(set) weak var readButton: UIButton?
 
-#endif /* StockWatch_Demo_for_watchOS_Prefix_pch */
+    // MARK: -
+    // MARK: Initialization
 
+    required init?(coder decoder: NSCoder) {
+        super.init(coder: decoder)
+            // Nothing to do, actually
+    }
+
+    // MARK: -
+    // MARK: Properties
+}

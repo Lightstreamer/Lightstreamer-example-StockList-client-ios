@@ -1,5 +1,6 @@
+//  Converted to Swift 5.4 by Swiftify v5.4.24488 - https://swiftify.com/
 //
-//  StockListView.h
+//  StockListAppDelegate.swift
 //  StockList Demo for iOS
 //
 // Copyright (c) Lightstreamer Srl
@@ -17,18 +18,10 @@
 // limitations under the License.
 //
 
-#import <UIKit/UIKit.h>
+import Foundation
 
-
-@interface StockListView : UIView {
-	IBOutlet __weak UITableView *_table;
+@objc protocol StockListAppDelegate: NSObjectProtocol {
+    // MARK: -
+    // MARK: Properties
+    var stockListController: StockListViewController? { get }
 }
-
-
-#pragma mark -
-#pragma mark Properties
-
-@property (weak, nonatomic, readonly) UITableView *table;
-
-
-@end

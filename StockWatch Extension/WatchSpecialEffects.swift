@@ -1,5 +1,6 @@
+//  Converted to Swift 5.4 by Swiftify v5.4.22271 - https://swiftify.com/
 //
-//  ExtensionDelegate.m
+//  WatchSpecialEffects.swift
 //  StockWatch Extension
 //
 // Copyright (c) Lightstreamer Srl
@@ -17,33 +18,22 @@
 // limitations under the License.
 //
 
-#import "ExtensionDelegate.h"
+import Foundation
+import WatchKit
 
+class WatchSpecialEffects: NSObject {
+    // MARK: -
+    // MARK: UI element flashing
+    @objc class func flash(_ group: WKInterfaceGroup?, with color: UIColor?) {
+        group?.setBackgroundColor(color)
 
-@implementation ExtensionDelegate
+        WatchSpecialEffects.self.perform(#selector(unflashGrup(_:)), with: group, afterDelay: FLASH_DURATION)
+    }
 
+    // MARK: -
+    // MARK: Internals
 
-#pragma mark -
-#pragma mark Extension lifecycle
-
-- (void) applicationDidFinishLaunching {
-    
-    // Uncomment for detailed logging
-//  [LSLightstreamerClient setLoggerProvider:[[LSConsoleLoggerProvider alloc] initWithLevel:LSConsoleLogLevelDebug]];
-    
-    // Nothing to do, for now
+    @objc class func unflashGrup(_ group: WKInterfaceGroup?) {
+        group?.setBackgroundColor(UIColor.clear)
+    }
 }
-
-- (void) applicationDidBecomeActive {
-    
-    // Nothing to do, for now
-}
-
-- (void) applicationWillResignActive {
-    
-    // Nothing to do, for now
-}
-
-
-@end
-

@@ -7,24 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		2860E328111B887F00E27156 /* AppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E326111B887F00E27156 /* AppDelegate_iPhone.m */; };
 		2860E329111B887F00E27156 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E327111B887F00E27156 /* MainWindow_iPhone.xib */; };
-		2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E32C111B888700E27156 /* AppDelegate_iPad.m */; };
 		2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E32D111B888700E27156 /* MainWindow_iPad.xib */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
-		8C00FE641884390B009A4F34 /* Connector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C00FE631884390B009A4F34 /* Connector.m */; };
+		578EFEAD26F4740D003207E3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEA926F4740D003207E3 /* ExtensionDelegate.swift */; };
+		578EFEAE26F4740D003207E3 /* WatchSpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEAA26F4740D003207E3 /* WatchSpecialEffects.swift */; };
+		578EFEB026F4740D003207E3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEAC26F4740D003207E3 /* InterfaceController.swift */; };
+		578EFEB226F47BCA003207E3 /* AppDelegate_iPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEB126F47BCA003207E3 /* AppDelegate_iPad.swift */; };
+		578EFEB426F47BE4003207E3 /* AppDelegate_iPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEB326F47BE4003207E3 /* AppDelegate_iPhone.swift */; };
+		578EFEC526F47CAC003207E3 /* StockListAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEB526F47CAB003207E3 /* StockListAppDelegate.swift */; };
+		578EFEC626F47CAC003207E3 /* StockListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEB626F47CAB003207E3 /* StockListViewController.swift */; };
+		578EFEC726F47CAC003207E3 /* StockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEB726F47CAB003207E3 /* StockListView.swift */; };
+		578EFEC826F47CAC003207E3 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEB826F47CAB003207E3 /* ChartView.swift */; };
+		578EFEC926F47CAC003207E3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEB926F47CAC003207E3 /* DetailView.swift */; };
+		578EFECA26F47CAC003207E3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEBA26F47CAC003207E3 /* DetailViewController.swift */; };
+		578EFECB26F47CAC003207E3 /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEBB26F47CAC003207E3 /* Connector.swift */; };
+		578EFECC26F47CAC003207E3 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEBC26F47CAC003207E3 /* InfoView.swift */; };
+		578EFECD26F47CAC003207E3 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEBD26F47CAC003207E3 /* ChartViewController.swift */; };
+		578EFECE26F47CAC003207E3 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEBE26F47CAC003207E3 /* StatusView.swift */; };
+		578EFECF26F47CAC003207E3 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEBF26F47CAC003207E3 /* StatusViewController.swift */; };
+		578EFED026F47CAC003207E3 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEC026F47CAC003207E3 /* InfoViewController.swift */; };
+		578EFED126F47CAC003207E3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEC126F47CAC003207E3 /* main.swift */; };
+		578EFED226F47CAC003207E3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEC226F47CAC003207E3 /* Constants.swift */; };
+		578EFED326F47CAC003207E3 /* StockListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEC326F47CAC003207E3 /* StockListCell.swift */; };
+		578EFED426F47CAC003207E3 /* SpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEC426F47CAC003207E3 /* SpecialEffects.swift */; };
+		578EFED526F47CC8003207E3 /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEBB26F47CAC003207E3 /* Connector.swift */; };
+		578EFEDB26F481D3003207E3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEC226F47CAC003207E3 /* Constants.swift */; };
+		57971FB326F4C06B00058B04 /* LightstreamerClient in Frameworks */ = {isa = PBXBuildFile; productRef = 57971FB226F4C06B00058B04 /* LightstreamerClient */; };
+		57971FB526F4C0B200058B04 /* LightstreamerClient in Frameworks */ = {isa = PBXBuildFile; productRef = 57971FB426F4C0B200058B04 /* LightstreamerClient */; };
 		8C2E353D1FFD321300D6020F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2E353C1FFD321300D6020F /* Media.xcassets */; };
-		8C2F040F1869D90500012B38 /* SpecialEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F040E1869D90500012B38 /* SpecialEffects.m */; };
-		8C66014C186D90D7008DB46F /* ChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C66014B186D90D7008DB46F /* ChartView.m */; };
-		8C66014F186D90F0008DB46F /* ChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C66014E186D90F0008DB46F /* ChartViewController.m */; };
 		8C660151186DB6D1008DB46F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C660150186DB6D1008DB46F /* CoreText.framework */; };
-		8C7518E41875BBA700CB61D5 /* UIAlertView+BlockExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7518E31875BBA700CB61D5 /* UIAlertView+BlockExtensions.m */; };
 		8C7815011FFBEC9200DEB287 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C7815001FFBEC9200DEB287 /* LaunchScreen.xib */; };
-		8C7A1A3012E4AF770019C2A7 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7A1A2F12E4AF770019C2A7 /* InfoViewController.m */; };
-		8C7A1A3612E4AF8D0019C2A7 /* InfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7A1A3512E4AF8D0019C2A7 /* InfoView.m */; };
 		8CA3C25D17C3A747005598B5 /* StockListSection_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C25C17C3A747005598B5 /* StockListSection_iPhone.xib */; };
 		8CA3C25F17C3A77F005598B5 /* InfoView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C25E17C3A77F005598B5 /* InfoView_iPhone.xib */; };
 		8CA3C26117C3A78C005598B5 /* StatusView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3C26017C3A78C005598B5 /* StatusView_iPhone.xib */; };
@@ -33,28 +48,15 @@
 		8CB7600F203471820099AA49 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CB7600D203471820099AA49 /* Interface.storyboard */; };
 		8CB76011203471820099AA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CB76010203471820099AA49 /* Assets.xcassets */; };
 		8CB76018203471820099AA49 /* StockWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8CB76017203471820099AA49 /* StockWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		8CB7601E203471820099AA49 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7601D203471820099AA49 /* InterfaceController.m */; };
-		8CB76021203471820099AA49 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB76020203471820099AA49 /* ExtensionDelegate.m */; };
 		8CB76023203471820099AA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CB76022203471820099AA49 /* Assets.xcassets */; };
 		8CB76028203471820099AA49 /* StockWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8CB7600B203471810099AA49 /* StockWatch.app */; };
-		8CB76032203476410099AA49 /* WatchSpecialEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB76031203476410099AA49 /* WatchSpecialEffects.m */; };
-		8CB76034203477F60099AA49 /* Connector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C00FE631884390B009A4F34 /* Connector.m */; };
 		8CD113AD12A01DFC0047C173 /* StockListView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD113AC12A01DFC0047C173 /* StockListView_iPad.xib */; };
 		8CD113B012A01E600047C173 /* StockListView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD113AF12A01E600047C173 /* StockListView_iPhone.xib */; };
-		8CD113B412A01EEE0047C173 /* StockListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD113B312A01EEE0047C173 /* StockListViewController.m */; };
-		8CD113B712A01F0D0047C173 /* StockListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD113B612A01F0D0047C173 /* StockListView.m */; };
 		8CD113CA12A021DD0047C173 /* StockListCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD113C912A021DD0047C173 /* StockListCell_iPad.xib */; };
 		8CD113CD12A023640047C173 /* StockListSection_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD113CC12A023640047C173 /* StockListSection_iPad.xib */; };
 		8CD113D012A025F90047C173 /* StockListCell_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD113CF12A025F90047C173 /* StockListCell_iPhone.xib */; };
-		8CD1140F12A02B8F0047C173 /* StockListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD1140E12A02B8F0047C173 /* StockListCell.m */; };
 		8CD8D58118688B910021E803 /* DetailView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD8D58018688B910021E803 /* DetailView_iPad.xib */; };
-		8CD8D58418688CC40021E803 /* DetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD8D58318688CC40021E803 /* DetailView.m */; };
-		8CD8D58718688CDA0021E803 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD8D58618688CDA0021E803 /* DetailViewController.m */; };
 		8CD8D589186894DC0021E803 /* DetailView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD8D588186894DC0021E803 /* DetailView_iPhone.xib */; };
-		8CED185F132FD30100F92DFE /* StatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CED185E132FD2FF00F92DFE /* StatusViewController.m */; };
-		8CED1862132FD32900F92DFE /* StatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CED1861132FD32500F92DFE /* StatusView.m */; };
-		96F7C924259B822F00D2F760 /* Lightstreamer_iOS_Client in Frameworks */ = {isa = PBXBuildFile; productRef = 96F7C923259B822F00D2F760 /* Lightstreamer_iOS_Client */; };
-		96F7C92D259B828E00D2F760 /* Lightstreamer_watchOS_Client in Frameworks */ = {isa = PBXBuildFile; productRef = 96F7C92C259B828E00D2F760 /* Lightstreamer_watchOS_Client */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,33 +105,35 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* Lightstreamer StockList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lightstreamer StockList.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		2860E325111B887F00E27156 /* AppDelegate_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate_iPhone.h; sourceTree = "<group>"; };
-		2860E326111B887F00E27156 /* AppDelegate_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate_iPhone.m; sourceTree = "<group>"; };
 		2860E327111B887F00E27156 /* MainWindow_iPhone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow_iPhone.xib; sourceTree = "<group>"; };
-		2860E32B111B888700E27156 /* AppDelegate_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate_iPad.h; sourceTree = "<group>"; };
-		2860E32C111B888700E27156 /* AppDelegate_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate_iPad.m; sourceTree = "<group>"; };
 		2860E32D111B888700E27156 /* MainWindow_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow_iPad.xib; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
-		32CA4F630368D1EE00C91783 /* StockList_Demo_for_iOS_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockList_Demo_for_iOS_Prefix.pch; sourceTree = "<group>"; };
-		8C00FE621884390B009A4F34 /* Connector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Connector.h; path = Shared/Connector.h; sourceTree = "<group>"; };
-		8C00FE631884390B009A4F34 /* Connector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Connector.m; path = Shared/Connector.m; sourceTree = "<group>"; };
+		578EFEA926F4740D003207E3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		578EFEAA26F4740D003207E3 /* WatchSpecialEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSpecialEffects.swift; sourceTree = "<group>"; };
+		578EFEAC26F4740D003207E3 /* InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		578EFEB126F47BCA003207E3 /* AppDelegate_iPad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate_iPad.swift; sourceTree = "<group>"; };
+		578EFEB326F47BE4003207E3 /* AppDelegate_iPhone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate_iPhone.swift; sourceTree = "<group>"; };
+		578EFEB526F47CAB003207E3 /* StockListAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StockListAppDelegate.swift; path = Shared/StockListAppDelegate.swift; sourceTree = "<group>"; };
+		578EFEB626F47CAB003207E3 /* StockListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StockListViewController.swift; path = Shared/StockListViewController.swift; sourceTree = "<group>"; };
+		578EFEB726F47CAB003207E3 /* StockListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StockListView.swift; path = Shared/StockListView.swift; sourceTree = "<group>"; };
+		578EFEB826F47CAB003207E3 /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChartView.swift; path = Shared/ChartView.swift; sourceTree = "<group>"; };
+		578EFEB926F47CAC003207E3 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailView.swift; path = Shared/DetailView.swift; sourceTree = "<group>"; };
+		578EFEBA26F47CAC003207E3 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = Shared/DetailViewController.swift; sourceTree = "<group>"; };
+		578EFEBB26F47CAC003207E3 /* Connector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Connector.swift; path = Shared/Connector.swift; sourceTree = "<group>"; };
+		578EFEBC26F47CAC003207E3 /* InfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoView.swift; path = Shared/InfoView.swift; sourceTree = "<group>"; };
+		578EFEBD26F47CAC003207E3 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChartViewController.swift; path = Shared/ChartViewController.swift; sourceTree = "<group>"; };
+		578EFEBE26F47CAC003207E3 /* StatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatusView.swift; path = Shared/StatusView.swift; sourceTree = "<group>"; };
+		578EFEBF26F47CAC003207E3 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatusViewController.swift; path = Shared/StatusViewController.swift; sourceTree = "<group>"; };
+		578EFEC026F47CAC003207E3 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoViewController.swift; path = Shared/InfoViewController.swift; sourceTree = "<group>"; };
+		578EFEC126F47CAC003207E3 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = Shared/main.swift; sourceTree = "<group>"; };
+		578EFEC226F47CAC003207E3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Shared/Constants.swift; sourceTree = "<group>"; };
+		578EFEC326F47CAC003207E3 /* StockListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StockListCell.swift; path = Shared/StockListCell.swift; sourceTree = "<group>"; };
+		578EFEC426F47CAC003207E3 /* SpecialEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpecialEffects.swift; path = Shared/SpecialEffects.swift; sourceTree = "<group>"; };
+		57971FAF26F4BF3900058B04 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		57971FB026F4BF3900058B04 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8C2E353C1FFD321300D6020F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = Shared/Media.xcassets; sourceTree = "<group>"; };
-		8C2F040D1869D90500012B38 /* SpecialEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpecialEffects.h; path = Shared/SpecialEffects.h; sourceTree = "<group>"; };
-		8C2F040E1869D90500012B38 /* SpecialEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpecialEffects.m; path = Shared/SpecialEffects.m; sourceTree = "<group>"; };
-		8C66014A186D90D7008DB46F /* ChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChartView.h; path = Shared/ChartView.h; sourceTree = "<group>"; };
-		8C66014B186D90D7008DB46F /* ChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChartView.m; path = Shared/ChartView.m; sourceTree = "<group>"; };
-		8C66014D186D90F0008DB46F /* ChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChartViewController.h; path = Shared/ChartViewController.h; sourceTree = "<group>"; };
-		8C66014E186D90F0008DB46F /* ChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChartViewController.m; path = Shared/ChartViewController.m; sourceTree = "<group>"; };
 		8C660150186DB6D1008DB46F /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		8C7518E018757A2700CB61D5 /* StockListAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StockListAppDelegate.h; path = Shared/StockListAppDelegate.h; sourceTree = "<group>"; };
-		8C7518E21875BBA700CB61D5 /* UIAlertView+BlockExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+BlockExtensions.h"; path = "Shared/UIAlertView+BlockExtensions.h"; sourceTree = "<group>"; };
-		8C7518E31875BBA700CB61D5 /* UIAlertView+BlockExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+BlockExtensions.m"; path = "Shared/UIAlertView+BlockExtensions.m"; sourceTree = "<group>"; };
 		8C7815001FFBEC9200DEB287 /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = Shared/LaunchScreen.xib; sourceTree = "<group>"; };
-		8C7A1A2E12E4AF770019C2A7 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoViewController.h; path = Shared/InfoViewController.h; sourceTree = "<group>"; };
-		8C7A1A2F12E4AF770019C2A7 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoViewController.m; path = Shared/InfoViewController.m; sourceTree = "<group>"; };
-		8C7A1A3412E4AF8D0019C2A7 /* InfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoView.h; path = Shared/InfoView.h; sourceTree = "<group>"; };
-		8C7A1A3512E4AF8D0019C2A7 /* InfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoView.m; path = Shared/InfoView.m; sourceTree = "<group>"; };
 		8CA3C25C17C3A747005598B5 /* StockListSection_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StockListSection_iPhone.xib; sourceTree = "<group>"; };
 		8CA3C25E17C3A77F005598B5 /* InfoView_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoView_iPhone.xib; sourceTree = "<group>"; };
 		8CA3C26017C3A78C005598B5 /* StatusView_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatusView_iPhone.xib; sourceTree = "<group>"; };
@@ -140,37 +144,15 @@
 		8CB76010203471820099AA49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CB76012203471820099AA49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CB76017203471820099AA49 /* StockWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "StockWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8CB7601C203471820099AA49 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
-		8CB7601D203471820099AA49 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
-		8CB7601F203471820099AA49 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
-		8CB76020203471820099AA49 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
 		8CB76022203471820099AA49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CB76024203471820099AA49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CB76030203476410099AA49 /* WatchSpecialEffects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WatchSpecialEffects.h; sourceTree = "<group>"; };
-		8CB76031203476410099AA49 /* WatchSpecialEffects.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatchSpecialEffects.m; sourceTree = "<group>"; };
-		8CB76033203476540099AA49 /* StockWatch_Demo_for_watchOS_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockWatch_Demo_for_watchOS_Prefix.pch; sourceTree = "<group>"; };
 		8CD113AC12A01DFC0047C173 /* StockListView_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockListView_iPad.xib; sourceTree = "<group>"; };
 		8CD113AF12A01E600047C173 /* StockListView_iPhone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockListView_iPhone.xib; sourceTree = "<group>"; };
-		8CD113B212A01EEE0047C173 /* StockListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StockListViewController.h; path = Shared/StockListViewController.h; sourceTree = "<group>"; };
-		8CD113B312A01EEE0047C173 /* StockListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StockListViewController.m; path = Shared/StockListViewController.m; sourceTree = "<group>"; };
-		8CD113B512A01F0D0047C173 /* StockListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StockListView.h; path = Shared/StockListView.h; sourceTree = "<group>"; };
-		8CD113B612A01F0D0047C173 /* StockListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StockListView.m; path = Shared/StockListView.m; sourceTree = "<group>"; };
-		8CD113B812A021000047C173 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Shared/Constants.h; sourceTree = "<group>"; };
 		8CD113C912A021DD0047C173 /* StockListCell_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockListCell_iPad.xib; sourceTree = "<group>"; };
 		8CD113CC12A023640047C173 /* StockListSection_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockListSection_iPad.xib; sourceTree = "<group>"; };
 		8CD113CF12A025F90047C173 /* StockListCell_iPhone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockListCell_iPhone.xib; sourceTree = "<group>"; };
-		8CD1140D12A02B8F0047C173 /* StockListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StockListCell.h; path = Shared/StockListCell.h; sourceTree = "<group>"; };
-		8CD1140E12A02B8F0047C173 /* StockListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StockListCell.m; path = Shared/StockListCell.m; sourceTree = "<group>"; };
 		8CD8D58018688B910021E803 /* DetailView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView_iPad.xib; sourceTree = "<group>"; };
-		8CD8D58218688CC40021E803 /* DetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailView.h; path = Shared/DetailView.h; sourceTree = "<group>"; };
-		8CD8D58318688CC40021E803 /* DetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailView.m; path = Shared/DetailView.m; sourceTree = "<group>"; };
-		8CD8D58518688CDA0021E803 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = Shared/DetailViewController.h; sourceTree = "<group>"; };
-		8CD8D58618688CDA0021E803 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = Shared/DetailViewController.m; sourceTree = "<group>"; };
 		8CD8D588186894DC0021E803 /* DetailView_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView_iPhone.xib; sourceTree = "<group>"; };
-		8CED185D132FD2FD00F92DFE /* StatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatusViewController.h; path = Shared/StatusViewController.h; sourceTree = "<group>"; };
-		8CED185E132FD2FF00F92DFE /* StatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatusViewController.m; path = Shared/StatusViewController.m; sourceTree = "<group>"; };
-		8CED1860132FD32300F92DFE /* StatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatusView.h; path = Shared/StatusView.h; sourceTree = "<group>"; };
-		8CED1861132FD32500F92DFE /* StatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatusView.m; path = Shared/StatusView.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* StockList_Demo_for_iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "StockList_Demo_for_iOS-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,9 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C660151186DB6D1008DB46F /* CoreText.framework in Frameworks */,
-				96F7C924259B822F00D2F760 /* Lightstreamer_iOS_Client in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				57971FB326F4C06B00058B04 /* LightstreamerClient in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,7 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96F7C92D259B828E00D2F760 /* Lightstreamer_watchOS_Client in Frameworks */,
+				57971FB526F4C0B200058B04 /* LightstreamerClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,8 +200,7 @@
 		2860E324111B887F00E27156 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
-				2860E325111B887F00E27156 /* AppDelegate_iPhone.h */,
-				2860E326111B887F00E27156 /* AppDelegate_iPhone.m */,
+				578EFEB326F47BE4003207E3 /* AppDelegate_iPhone.swift */,
 				2860E327111B887F00E27156 /* MainWindow_iPhone.xib */,
 				8CD113AF12A01E600047C173 /* StockListView_iPhone.xib */,
 				8CD113CF12A025F90047C173 /* StockListCell_iPhone.xib */,
@@ -234,8 +215,7 @@
 		2860E32A111B888700E27156 /* iPad */ = {
 			isa = PBXGroup;
 			children = (
-				2860E32B111B888700E27156 /* AppDelegate_iPad.h */,
-				2860E32C111B888700E27156 /* AppDelegate_iPad.m */,
+				578EFEB126F47BCA003207E3 /* AppDelegate_iPad.swift */,
 				2860E32D111B888700E27156 /* MainWindow_iPad.xib */,
 				8CD113AC12A01DFC0047C173 /* StockListView_iPad.xib */,
 				8CD113C912A021DD0047C173 /* StockListCell_iPad.xib */,
@@ -250,37 +230,22 @@
 		28EEBF621118D79A00187D67 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				8C7518E018757A2700CB61D5 /* StockListAppDelegate.h */,
-				8CD113B212A01EEE0047C173 /* StockListViewController.h */,
-				8CD113B312A01EEE0047C173 /* StockListViewController.m */,
-				8CD113B512A01F0D0047C173 /* StockListView.h */,
-				8CD113B612A01F0D0047C173 /* StockListView.m */,
-				8CD1140D12A02B8F0047C173 /* StockListCell.h */,
-				8CD1140E12A02B8F0047C173 /* StockListCell.m */,
-				8CD8D58518688CDA0021E803 /* DetailViewController.h */,
-				8CD8D58618688CDA0021E803 /* DetailViewController.m */,
-				8CD8D58218688CC40021E803 /* DetailView.h */,
-				8CD8D58318688CC40021E803 /* DetailView.m */,
-				8C66014D186D90F0008DB46F /* ChartViewController.h */,
-				8C66014E186D90F0008DB46F /* ChartViewController.m */,
-				8C66014A186D90D7008DB46F /* ChartView.h */,
-				8C66014B186D90D7008DB46F /* ChartView.m */,
-				8C7A1A2E12E4AF770019C2A7 /* InfoViewController.h */,
-				8C7A1A2F12E4AF770019C2A7 /* InfoViewController.m */,
-				8C7A1A3412E4AF8D0019C2A7 /* InfoView.h */,
-				8C7A1A3512E4AF8D0019C2A7 /* InfoView.m */,
-				8CED185D132FD2FD00F92DFE /* StatusViewController.h */,
-				8CED185E132FD2FF00F92DFE /* StatusViewController.m */,
-				8CED1860132FD32300F92DFE /* StatusView.h */,
-				8CED1861132FD32500F92DFE /* StatusView.m */,
-				8C00FE621884390B009A4F34 /* Connector.h */,
-				8C00FE631884390B009A4F34 /* Connector.m */,
-				8C2F040D1869D90500012B38 /* SpecialEffects.h */,
-				8C2F040E1869D90500012B38 /* SpecialEffects.m */,
-				8CD113B812A021000047C173 /* Constants.h */,
-				29B97316FDCFA39411CA2CEA /* main.m */,
-				8C7518E21875BBA700CB61D5 /* UIAlertView+BlockExtensions.h */,
-				8C7518E31875BBA700CB61D5 /* UIAlertView+BlockExtensions.m */,
+				578EFEB826F47CAB003207E3 /* ChartView.swift */,
+				578EFEBD26F47CAC003207E3 /* ChartViewController.swift */,
+				578EFEBB26F47CAC003207E3 /* Connector.swift */,
+				578EFEC226F47CAC003207E3 /* Constants.swift */,
+				578EFEB926F47CAC003207E3 /* DetailView.swift */,
+				578EFEBA26F47CAC003207E3 /* DetailViewController.swift */,
+				578EFEBC26F47CAC003207E3 /* InfoView.swift */,
+				578EFEC026F47CAC003207E3 /* InfoViewController.swift */,
+				578EFEC126F47CAC003207E3 /* main.swift */,
+				578EFEC426F47CAC003207E3 /* SpecialEffects.swift */,
+				578EFEBE26F47CAC003207E3 /* StatusView.swift */,
+				578EFEBF26F47CAC003207E3 /* StatusViewController.swift */,
+				578EFEB526F47CAB003207E3 /* StockListAppDelegate.swift */,
+				578EFEC326F47CAC003207E3 /* StockListCell.swift */,
+				578EFEB726F47CAB003207E3 /* StockListView.swift */,
+				578EFEB626F47CAB003207E3 /* StockListViewController.swift */,
 				8C7815001FFBEC9200DEB287 /* LaunchScreen.xib */,
 				8C2E353C1FFD321300D6020F /* Media.xcassets */,
 			);
@@ -290,6 +255,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				57971FAF26F4BF3900058B04 /* LICENSE */,
+				57971FB026F4BF3900058B04 /* README.md */,
 				2860E32A111B888700E27156 /* iPad */,
 				2860E324111B887F00E27156 /* iPhone */,
 				28EEBF621118D79A00187D67 /* Shared */,
@@ -306,7 +273,6 @@
 			isa = PBXGroup;
 			children = (
 				8D1107310486CEB800E47090 /* StockList_Demo_for_iOS-Info.plist */,
-				32CA4F630368D1EE00C91783 /* StockList_Demo_for_iOS_Prefix.pch */,
 			);
 			name = "Other Resources";
 			sourceTree = "<group>";
@@ -335,15 +301,11 @@
 		8CB7601B203471820099AA49 /* StockWatch Extension */ = {
 			isa = PBXGroup;
 			children = (
-				8CB7601C203471820099AA49 /* InterfaceController.h */,
-				8CB7601D203471820099AA49 /* InterfaceController.m */,
-				8CB7601F203471820099AA49 /* ExtensionDelegate.h */,
-				8CB76020203471820099AA49 /* ExtensionDelegate.m */,
-				8CB76030203476410099AA49 /* WatchSpecialEffects.h */,
-				8CB76031203476410099AA49 /* WatchSpecialEffects.m */,
+				578EFEA926F4740D003207E3 /* ExtensionDelegate.swift */,
+				578EFEAC26F4740D003207E3 /* InterfaceController.swift */,
+				578EFEAA26F4740D003207E3 /* WatchSpecialEffects.swift */,
 				8CB76022203471820099AA49 /* Assets.xcassets */,
 				8CB76024203471820099AA49 /* Info.plist */,
-				8CB76033203476540099AA49 /* StockWatch_Demo_for_watchOS_Prefix.pch */,
 			);
 			path = "StockWatch Extension";
 			sourceTree = "<group>";
@@ -368,7 +330,7 @@
 			);
 			name = "StockList Demo for iOS";
 			packageProductDependencies = (
-				96F7C923259B822F00D2F760 /* Lightstreamer_iOS_Client */,
+				57971FB226F4C06B00058B04 /* LightstreamerClient */,
 			);
 			productName = "StockList Demo for iOS";
 			productReference = 1D6058910D05DD3D006BFB54 /* Lightstreamer StockList.app */;
@@ -406,7 +368,7 @@
 			);
 			name = "StockWatch Extension";
 			packageProductDependencies = (
-				96F7C92C259B828E00D2F760 /* Lightstreamer_watchOS_Client */,
+				57971FB426F4C0B200058B04 /* LightstreamerClient */,
 			);
 			productName = "StockWatch Extension";
 			productReference = 8CB76017203471820099AA49 /* StockWatch Extension.appex */;
@@ -418,7 +380,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Weswit srl";
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
@@ -448,8 +410,7 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			packageReferences = (
-				96F7C922259B822F00D2F760 /* XCRemoteSwiftPackageReference "Lightstreamer_iOS_Client" */,
-				96F7C92B259B828E00D2F760 /* XCRemoteSwiftPackageReference "Lightstreamer_watchOS_Client" */,
+				57971FB126F4C06B00058B04 /* XCRemoteSwiftPackageReference "Lightstreamer-lib-client-swift" */,
 			);
 			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
 			projectDirPath = "";
@@ -531,23 +492,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				2860E328111B887F00E27156 /* AppDelegate_iPhone.m in Sources */,
-				2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */,
-				8C66014C186D90D7008DB46F /* ChartView.m in Sources */,
-				8CD113B412A01EEE0047C173 /* StockListViewController.m in Sources */,
-				8CD113B712A01F0D0047C173 /* StockListView.m in Sources */,
-				8CD1140F12A02B8F0047C173 /* StockListCell.m in Sources */,
-				8C00FE641884390B009A4F34 /* Connector.m in Sources */,
-				8C2F040F1869D90500012B38 /* SpecialEffects.m in Sources */,
-				8C7A1A3012E4AF770019C2A7 /* InfoViewController.m in Sources */,
-				8C7A1A3612E4AF8D0019C2A7 /* InfoView.m in Sources */,
-				8C66014F186D90F0008DB46F /* ChartViewController.m in Sources */,
-				8CED185F132FD30100F92DFE /* StatusViewController.m in Sources */,
-				8CD8D58418688CC40021E803 /* DetailView.m in Sources */,
-				8CED1862132FD32900F92DFE /* StatusView.m in Sources */,
-				8CD8D58718688CDA0021E803 /* DetailViewController.m in Sources */,
-				8C7518E41875BBA700CB61D5 /* UIAlertView+BlockExtensions.m in Sources */,
+				578EFECF26F47CAC003207E3 /* StatusViewController.swift in Sources */,
+				578EFED226F47CAC003207E3 /* Constants.swift in Sources */,
+				578EFECA26F47CAC003207E3 /* DetailViewController.swift in Sources */,
+				578EFECE26F47CAC003207E3 /* StatusView.swift in Sources */,
+				578EFECC26F47CAC003207E3 /* InfoView.swift in Sources */,
+				578EFED026F47CAC003207E3 /* InfoViewController.swift in Sources */,
+				578EFEB426F47BE4003207E3 /* AppDelegate_iPhone.swift in Sources */,
+				578EFEC926F47CAC003207E3 /* DetailView.swift in Sources */,
+				578EFECB26F47CAC003207E3 /* Connector.swift in Sources */,
+				578EFECD26F47CAC003207E3 /* ChartViewController.swift in Sources */,
+				578EFEC526F47CAC003207E3 /* StockListAppDelegate.swift in Sources */,
+				578EFED126F47CAC003207E3 /* main.swift in Sources */,
+				578EFED326F47CAC003207E3 /* StockListCell.swift in Sources */,
+				578EFEB226F47BCA003207E3 /* AppDelegate_iPad.swift in Sources */,
+				578EFEC826F47CAC003207E3 /* ChartView.swift in Sources */,
+				578EFEC726F47CAC003207E3 /* StockListView.swift in Sources */,
+				578EFED426F47CAC003207E3 /* SpecialEffects.swift in Sources */,
+				578EFEC626F47CAC003207E3 /* StockListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,10 +517,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CB76021203471820099AA49 /* ExtensionDelegate.m in Sources */,
-				8CB76034203477F60099AA49 /* Connector.m in Sources */,
-				8CB7601E203471820099AA49 /* InterfaceController.m in Sources */,
-				8CB76032203476410099AA49 /* WatchSpecialEffects.m in Sources */,
+				578EFEAE26F4740D003207E3 /* WatchSpecialEffects.swift in Sources */,
+				578EFEB026F4740D003207E3 /* InterfaceController.swift in Sources */,
+				578EFED526F47CC8003207E3 /* Connector.swift in Sources */,
+				578EFEAD26F4740D003207E3 /* ExtensionDelegate.swift in Sources */,
+				578EFEDB26F481D3003207E3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,6 +558,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -606,7 +570,7 @@
 				GCC_PREFIX_HEADER = StockList_Demo_for_iOS_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "StockList_Demo_for_iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -615,6 +579,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lightstreamer.ios.stocklist.nompn;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -624,6 +590,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
@@ -633,7 +600,7 @@
 				GCC_PREFIX_HEADER = StockList_Demo_for_iOS_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "StockList_Demo_for_iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -642,6 +609,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lightstreamer.ios.stocklist.nompn;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -678,14 +646,25 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				IBSC_MODULE = StockWatch_Extension;
 				INFOPLIST_FILE = StockWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../Frameworks",
+					"@loader_path/Frameworks",
+					"@loader_path/../Frameworks",
+					"@loader_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 2.8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lightstreamer.ios.stocklist.nompn.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
 			};
 			name = Debug;
 		};
@@ -716,15 +695,25 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				IBSC_MODULE = StockWatch_Extension;
 				INFOPLIST_FILE = StockWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../Frameworks",
+					"@loader_path/Frameworks",
+					"@loader_path/../Frameworks",
+					"@loader_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 2.8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lightstreamer.ios.stocklist.nompn.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
 			};
 			name = Release;
 		};
@@ -771,8 +760,10 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
 			};
 			name = Debug;
 		};
@@ -814,9 +805,10 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
 			};
 			name = Release;
 		};
@@ -836,6 +828,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -851,7 +844,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "Lightstreamer StockList";
 				SDKROOT = iphoneos;
@@ -875,6 +868,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -889,10 +883,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "Lightstreamer StockList";
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -939,34 +934,26 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		96F7C922259B822F00D2F760 /* XCRemoteSwiftPackageReference "Lightstreamer_iOS_Client" */ = {
+		57971FB126F4C06B00058B04 /* XCRemoteSwiftPackageReference "Lightstreamer-lib-client-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Lightstreamer/Lightstreamer_iOS_Client.git";
+			repositoryURL = "https://github.com/Lightstreamer/Lightstreamer-lib-client-swift";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 4.3.0;
-			};
-		};
-		96F7C92B259B828E00D2F760 /* XCRemoteSwiftPackageReference "Lightstreamer_watchOS_Client" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Lightstreamer/Lightstreamer_watchOS_Client.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.3.0;
+				minimumVersion = "5.0.0-beta.2";
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		96F7C923259B822F00D2F760 /* Lightstreamer_iOS_Client */ = {
+		57971FB226F4C06B00058B04 /* LightstreamerClient */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 96F7C922259B822F00D2F760 /* XCRemoteSwiftPackageReference "Lightstreamer_iOS_Client" */;
-			productName = Lightstreamer_iOS_Client;
+			package = 57971FB126F4C06B00058B04 /* XCRemoteSwiftPackageReference "Lightstreamer-lib-client-swift" */;
+			productName = LightstreamerClient;
 		};
-		96F7C92C259B828E00D2F760 /* Lightstreamer_watchOS_Client */ = {
+		57971FB426F4C0B200058B04 /* LightstreamerClient */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 96F7C92B259B828E00D2F760 /* XCRemoteSwiftPackageReference "Lightstreamer_watchOS_Client" */;
-			productName = Lightstreamer_watchOS_Client;
+			package = 57971FB126F4C06B00058B04 /* XCRemoteSwiftPackageReference "Lightstreamer-lib-client-swift" */;
+			productName = LightstreamerClient;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

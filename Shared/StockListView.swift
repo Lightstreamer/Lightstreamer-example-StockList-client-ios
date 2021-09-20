@@ -1,5 +1,6 @@
+//  Converted to Swift 5.4 by Swiftify v5.4.24488 - https://swiftify.com/
 //
-//  AppDelegate_iPhone.h
+//  StockListView.swift
 //  StockList Demo for iOS
 //
 // Copyright (c) Lightstreamer Srl
@@ -17,26 +18,21 @@
 // limitations under the License.
 //
 
-#import <UIKit/UIKit.h>
-#import "StockListAppDelegate.h"
+import UIKit
 
+class StockListView: UIView {
+    // MARK: -
+    // MARK: Properties
+    @IBOutlet @objc weak var table: UITableView?
 
-@class StockListViewController;
+    // MARK: -
+    // MARK: Initialization
 
-@interface AppDelegate_iPhone : NSObject <UIApplicationDelegate, StockListAppDelegate> {
-    UIWindow *_window;
+    required init?(coder decoder: NSCoder) {
+        super.init(coder: decoder)
+            // Nothing to do, actually
+    }
 
-	UINavigationController *_navController;
-	StockListViewController *_stockListController;
+    // MARK: -
+    // MARK: Properties
 }
-
-
-#pragma mark -
-#pragma mark Properties
-
-@property (nonatomic, strong) IBOutlet UIWindow *window;
-@property (nonatomic, readonly) StockListViewController *stockListController;
-
-
-@end
-

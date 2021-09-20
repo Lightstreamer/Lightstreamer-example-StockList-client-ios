@@ -1,9 +1,0 @@
-//
-// Prefix header for all source files of the 'StockList Demo for iOS' target in the 'StockList Demo for iOS' project
-//
-
-#ifdef __OBJC__
-    #import <Foundation/Foundation.h>
-    #import <UIKit/UIKit.h>
-	#import <Lightstreamer_iOS_Client/Lightstreamer_iOS_Client.h>
-#endif

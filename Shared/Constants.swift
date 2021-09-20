@@ -21,15 +21,14 @@
 import UIKit
 
 // Configuration for local installation
-//let PUSH_SERVER_URL = "http://localhost:8080/"
-//let ADAPTER_SET = "STOCKLISTDEMO"
-//let DATA_ADAPTER = "STOCKLIST_ADAPTER"
+let PUSH_SERVER_URL = "http://localhost:8080/"
+let ADAPTER_SET = "STOCKLISTDEMO"
+let DATA_ADAPTER = "STOCKLIST_ADAPTER"
 
 // Configuration for online demo server
-//let PUSH_SERVER_URL = "http://192.168.43.35:8080"
-let PUSH_SERVER_URL = "https://push.lightstreamer.com"
-let ADAPTER_SET = "DEMO"
-let DATA_ADAPTER = "QUOTE_ADAPTER"
+//let PUSH_SERVER_URL = "https://push.lightstreamer.com"
+//let ADAPTER_SET = "DEMO"
+//let DATA_ADAPTER = "QUOTE_ADAPTER"
 
 
 #if os(iOS)

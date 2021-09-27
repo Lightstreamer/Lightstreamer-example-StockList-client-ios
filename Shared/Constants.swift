@@ -20,6 +20,7 @@
 
 import UIKit
 
+#if DEBUG
 // Configuration for local installation
 let PUSH_SERVER_URL = "http://localhost:8080/"
 let ADAPTER_SET = "STOCKLISTDEMO"
@@ -29,7 +30,11 @@ let DATA_ADAPTER = "STOCKLIST_ADAPTER"
 //let PUSH_SERVER_URL = "https://push.lightstreamer.com"
 //let ADAPTER_SET = "DEMO"
 //let DATA_ADAPTER = "QUOTE_ADAPTER"
-
+#else
+let PUSH_SERVER_URL = "https://push.lightstreamer.com"
+let ADAPTER_SET = "DEMO"
+let DATA_ADAPTER = "QUOTE_ADAPTER"
+#endif
 
 #if os(iOS)
 let DEVICE_IPAD = UIDevice.current.userInterfaceIdiom == .pad

@@ -12,6 +12,8 @@
 		2860E329111B887F00E27156 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E327111B887F00E27156 /* MainWindow_iPhone.xib */; };
 		2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E32D111B888700E27156 /* MainWindow_iPad.xib */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		5748B7B22701D342004B4F48 /* LightstreamerClient in Frameworks */ = {isa = PBXBuildFile; productRef = 5748B7B12701D342004B4F48 /* LightstreamerClient */; };
+		5748B7B42701D356004B4F48 /* LightstreamerClient in Frameworks */ = {isa = PBXBuildFile; productRef = 5748B7B32701D356004B4F48 /* LightstreamerClient */; };
 		578EFEAD26F4740D003207E3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEA926F4740D003207E3 /* ExtensionDelegate.swift */; };
 		578EFEAE26F4740D003207E3 /* WatchSpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEAA26F4740D003207E3 /* WatchSpecialEffects.swift */; };
 		578EFEB026F4740D003207E3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEAC26F4740D003207E3 /* InterfaceController.swift */; };
@@ -35,8 +37,6 @@
 		578EFED426F47CAC003207E3 /* SpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEC426F47CAC003207E3 /* SpecialEffects.swift */; };
 		578EFED526F47CC8003207E3 /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEBB26F47CAC003207E3 /* Connector.swift */; };
 		578EFEDB26F481D3003207E3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578EFEC226F47CAC003207E3 /* Constants.swift */; };
-		57971FB326F4C06B00058B04 /* LightstreamerClient in Frameworks */ = {isa = PBXBuildFile; productRef = 57971FB226F4C06B00058B04 /* LightstreamerClient */; };
-		57971FB526F4C0B200058B04 /* LightstreamerClient in Frameworks */ = {isa = PBXBuildFile; productRef = 57971FB426F4C0B200058B04 /* LightstreamerClient */; };
 		8C2E353D1FFD321300D6020F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2E353C1FFD321300D6020F /* Media.xcassets */; };
 		8C660151186DB6D1008DB46F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C660150186DB6D1008DB46F /* CoreText.framework */; };
 		8C7815011FFBEC9200DEB287 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C7815001FFBEC9200DEB287 /* LaunchScreen.xib */; };
@@ -164,7 +164,7 @@
 				8C660151186DB6D1008DB46F /* CoreText.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
-				57971FB326F4C06B00058B04 /* LightstreamerClient in Frameworks */,
+				5748B7B22701D342004B4F48 /* LightstreamerClient in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,7 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57971FB526F4C0B200058B04 /* LightstreamerClient in Frameworks */,
+				5748B7B42701D356004B4F48 /* LightstreamerClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +330,7 @@
 			);
 			name = "StockList Demo for iOS";
 			packageProductDependencies = (
-				57971FB226F4C06B00058B04 /* LightstreamerClient */,
+				5748B7B12701D342004B4F48 /* LightstreamerClient */,
 			);
 			productName = "StockList Demo for iOS";
 			productReference = 1D6058910D05DD3D006BFB54 /* Lightstreamer StockList.app */;
@@ -368,7 +368,7 @@
 			);
 			name = "StockWatch Extension";
 			packageProductDependencies = (
-				57971FB426F4C0B200058B04 /* LightstreamerClient */,
+				5748B7B32701D356004B4F48 /* LightstreamerClient */,
 			);
 			productName = "StockWatch Extension";
 			productReference = 8CB76017203471820099AA49 /* StockWatch Extension.appex */;
@@ -410,7 +410,7 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			packageReferences = (
-				57971FB126F4C06B00058B04 /* XCRemoteSwiftPackageReference "Lightstreamer-lib-client-swift" */,
+				5748B7B02701D342004B4F48 /* XCRemoteSwiftPackageReference "Lightstreamer-lib-client-swift" */,
 			);
 			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
 			projectDirPath = "";
@@ -562,7 +562,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 2.8.1;
+				CURRENT_PROJECT_VERSION = 2.9.0;
 				DEVELOPMENT_TEAM = 7PGFJN8WH5;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -575,7 +575,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.8.1;
+				MARKETING_VERSION = 2.9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lightstreamer.ios.stocklist.nompn;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -594,7 +594,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 2.8.1;
+				CURRENT_PROJECT_VERSION = 2.9.0;
 				DEVELOPMENT_TEAM = 7PGFJN8WH5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = StockList_Demo_for_iOS_Prefix.pch;
@@ -605,7 +605,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.8.1;
+				MARKETING_VERSION = 2.9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lightstreamer.ios.stocklist.nompn;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -632,7 +632,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 2.8.1;
+				CURRENT_PROJECT_VERSION = 2.9.0;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 7PGFJN8WH5;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -655,7 +655,7 @@
 					"@loader_path/../Frameworks",
 					"@loader_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.8.1;
+				MARKETING_VERSION = 2.9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lightstreamer.ios.stocklist.nompn.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -686,7 +686,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 2.8.1;
+				CURRENT_PROJECT_VERSION = 2.9.0;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 7PGFJN8WH5;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -704,7 +704,7 @@
 					"@loader_path/../Frameworks",
 					"@loader_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.8.1;
+				MARKETING_VERSION = 2.9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lightstreamer.ios.stocklist.nompn.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -734,7 +734,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 2.8.1;
+				CURRENT_PROJECT_VERSION = 2.9.0;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 7PGFJN8WH5;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -754,7 +754,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.8.1;
+				MARKETING_VERSION = 2.9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lightstreamer.ios.stocklist.nompn.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
@@ -784,7 +784,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 2.8.1;
+				CURRENT_PROJECT_VERSION = 2.9.0;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 7PGFJN8WH5;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -799,7 +799,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.8.1;
+				MARKETING_VERSION = 2.9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lightstreamer.ios.stocklist.nompn.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
@@ -846,6 +846,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-D DEBUG";
 				PRODUCT_NAME = "Lightstreamer StockList";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -934,25 +935,25 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		57971FB126F4C06B00058B04 /* XCRemoteSwiftPackageReference "Lightstreamer-lib-client-swift" */ = {
+		5748B7B02701D342004B4F48 /* XCRemoteSwiftPackageReference "Lightstreamer-lib-client-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Lightstreamer/Lightstreamer-lib-client-swift";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = "5.0.0-beta.2";
+				minimumVersion = "5.0.0-beta.3";
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		57971FB226F4C06B00058B04 /* LightstreamerClient */ = {
+		5748B7B12701D342004B4F48 /* LightstreamerClient */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 57971FB126F4C06B00058B04 /* XCRemoteSwiftPackageReference "Lightstreamer-lib-client-swift" */;
+			package = 5748B7B02701D342004B4F48 /* XCRemoteSwiftPackageReference "Lightstreamer-lib-client-swift" */;
 			productName = LightstreamerClient;
 		};
-		57971FB426F4C0B200058B04 /* LightstreamerClient */ = {
+		5748B7B32701D356004B4F48 /* LightstreamerClient */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 57971FB126F4C06B00058B04 /* XCRemoteSwiftPackageReference "Lightstreamer-lib-client-swift" */;
+			package = 5748B7B02701D342004B4F48 /* XCRemoteSwiftPackageReference "Lightstreamer-lib-client-swift" */;
 			productName = LightstreamerClient;
 		};
 /* End XCSwiftPackageProductDependency section */

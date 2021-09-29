@@ -26,7 +26,6 @@ class DetailViewController: UIViewController, SubscriptionDelegate {
     let lockQueue = DispatchQueue(label: "lightstreamer.DetailViewController")
     var detailView: DetailView?
     var chartController: ChartViewController?
-    var priceMpnSubscription: MPNSubscription?
     var subscription: Subscription?
 
     var itemData: [String : String]?

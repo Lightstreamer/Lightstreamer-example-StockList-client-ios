@@ -56,8 +56,6 @@ let DETAIL_FIELDS = ["last_price", "time", "pct_change", "bid_quantity", "bid", 
 
 let NOTIFICATION_CONN_STATUS = NSNotification.Name("LSConnectionStatusChanged")
 let NOTIFICATION_CONN_ENDED = NSNotification.Name("LSConnectionEnded")
-let NOTIFICATION_MPN_ENABLED = NSNotification.Name("LSMPNEnabled")
-let NOTIFICATION_MPN_UPDATED = NSNotification.Name("LSMPNSubscriptionCacheUpdated")
 
 let ALERT_DELAY = 0.250
 let FLASH_DURATION = 0.150

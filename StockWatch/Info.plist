@@ -26,7 +26,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.lightstreamer.ios.stocklist.nompn</string>
+	<string>com.lightstreamer.ios.stocklist.nompn2</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>

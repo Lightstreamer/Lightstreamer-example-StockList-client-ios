@@ -939,8 +939,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Lightstreamer/Lightstreamer-lib-client-swift";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = "5.0.0-beta.3";
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.0.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

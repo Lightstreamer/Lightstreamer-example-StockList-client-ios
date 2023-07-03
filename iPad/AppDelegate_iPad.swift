@@ -40,6 +40,17 @@ class AppDelegate_iPad: NSObject, UIApplicationDelegate, StockListAppDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         application.statusBarStyle = .lightContent
 
+        if #available(iOS 15.0, *) {
+            let navigationBarAppearance = UINavigationBarAppearance()
+            navigationBarAppearance.configureWithOpaqueBackground()
+            navigationBarAppearance.backgroundColor = .darkGray
+            navigationBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+            navigationBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+            UINavigationBar.appearance().standardAppearance = navigationBarAppearance
+            UINavigationBar.appearance().compactAppearance = navigationBarAppearance
+            UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
+        }
+        
         // Uncomment for detailed logging
         // LightstreamerClient.setLoggerProvider(ConsoleLoggerProvider(level: .debug))
 

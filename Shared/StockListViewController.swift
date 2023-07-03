@@ -143,6 +143,9 @@ class StockListViewController: UITableViewController, SubscriptionDelegate, UIPo
         stockListView = niblets?.last as? StockListView
 
         tableView = stockListView?.table
+        if #available(iOS 15.0, *) {
+            tableView.sectionHeaderTopPadding = 0
+        }
         view = stockListView
         
         infoButton = UIBarButtonItem(image: UIImage(named: "Info"), style: .plain, target: self, action: #selector(infoTapped))

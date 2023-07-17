@@ -6,20 +6,13 @@ This project contains an example of an application for iPhone and iPad that empl
 
 A version with full support for mobile push notifications (MPN) is also available: [Lightstreamer - Stock-List Demo with APNs Push Notifications - iOS Client](https://github.com/Lightstreamer/Lightstreamer-example-MPNStockList-client-ios).
 
-## Live Demo
-
-[![screenshot](screenshot_newlarge.png)](https://apps.apple.com/us/app/lightstreamer-stocklist/id1588086645)<br>
-### [![](http://demos.lightstreamer.com/site/img/play.png) View live demo](https://apps.apple.com/us/app/lightstreamer-stocklist/id1588086645)<br>
+![screenshot](screenshot_newlarge.png)<br>
 
 ## Details
 
 This app, compatible with both iPhone and iPad, is an Swift version of the [Stock-List Demos](https://github.com/Lightstreamer/Lightstreamer-example-Stocklist-client-javascript).<br>
 
 This app uses the <b>Swift Client API for Lightstreamer</b> to handle the communications with Lightstreamer Server. A simple user interface is implemented to display the real-time data received from Lightstreamer Server.<br>
-
-## Install
-
-Binaries for the application are not provided, but it may be downloaded from the App Store at [this address](https://apps.apple.com/us/app/lightstreamer-stocklist/id1588086645). The downloaded app will connect to Lightstreamer's online demo server.
 
 ## Build
 
@@ -52,7 +45,7 @@ Done this, the app should run correctly on your test device and connect to your 
 
 ## Lightstreamer Compatibility Notes
 
-* Code compatible with Lightstreamer Swift Client Library version 5.0.0 or newer.
-* Build instructions compatible with Lightstreamer Swift Client SDK version 5.0.0 or newer.
-* For Lightstreamer Server version 7.0 or greater. Ensure that iOS and/or watchOS Client SDK is supported by Lightstreamer Server license configuration, depending on where the demo will be run.
+* Code compatible with Lightstreamer Swift Client Library version 6.0 or newer.
+* For Lightstreamer Server version 7.4 or greater. Ensure that iOS and/or watchOS Client SDK is supported by Lightstreamer Server license configuration, depending on where the demo will be run.
+* For a version of this example compatible with Lightstreamer iOS and watchOS Client SDKs versions up to 5, please refer to [this tag](https://github.com/Lightstreamer/Lightstreamer-example-StockList-client-ios/tree/latest-for-client-5.x).
 * For a version of this example compatible with Lightstreamer iOS and watchOS Client SDKs versions up to 4, please refer to [this tag](https://github.com/Lightstreamer/Lightstreamer-example-StockList-client-ios/tree/latest-for-client-4.x).
